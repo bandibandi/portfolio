@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    --color-bg-deep: #0d0f14;
+    --color-bg-card: #141620;
+    --color-bg-card-hover: #1a1d2e;
+    --color-text-primary: #e2e5f0;
+    --color-text-secondary: #8890a8;
+    --color-accent: #7aa2f7;
+    --color-accent-green: #9ece6a;
+    --color-accent-yellow: #e0af68;
+    --color-accent-purple: #bb9af7;
+    --color-accent-red: #f7768e;
+    --color-border: #1e2236;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background-color: var(--color-accent);
+    color: var(--color-bg-deep);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-bg-deep);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-text-secondary);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+}
+
+/* Hero floating glow animation */
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-40px, 30px); }
+}
+.animate-float {
+    animation: float 8s ease-in-out infinite;
+}
+
+/* Blinking terminal cursor */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.animate-blink {
+    animation: blink 1s step-end infinite;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-blink {
+        animation: none;
+    }
+    * {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Alpine.js cloak */
+[x-cloak] {
+    display: none !important;
+}
