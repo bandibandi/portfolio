@@ -22,7 +22,7 @@ new class extends Component
     {
         $this->validate();
 
-        Mail::to('hello@andrashorvath.dev')->send(
+        Mail::to(config('mail.from.address'))->send(
             new ContactMail($this->name, $this->email, $this->message)
         );
 
