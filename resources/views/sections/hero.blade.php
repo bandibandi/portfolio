@@ -7,14 +7,19 @@
             <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
             Available for freelance work
         </p>
+
         <h1 class="text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">
             I build <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">admin panels</span>
             &amp; <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">web apps</span>
             that run real businesses.
         </h1>
+
         <p class="text-lg text-text-secondary max-w-4xl leading-relaxed mb-10">
-            Full-stack Laravel developer specializing in FilamentPHP and the TALL stack, with 15+ years of experience across multinationals, SMEs, government, and my own e-commerce business. I build end-to-end systems that handle real customers, real payments, and real data. Based in Hungary, working globally.
+            Used daily by <strong class="text-text-primary font-semibold">1,000+ active users</strong>. I design and build custom admin systems,
+            internal tools, and automation platforms for businesses that outgrow spreadsheets. My work helps teams operate faster, reduce manual effort,
+            and scale without chaos.
         </p>
+
         <div class="flex flex-wrap gap-4">
             <a
                 href="#projects"
@@ -31,3 +36,4 @@
         </div>
     </div>
 </section>
+

@@ -15,27 +15,36 @@
         >
 
         {{-- Bio --}}
-        <p class="text-text-secondary leading-relaxed mb-4">
-            I'm Andras, a full-stack developer from Hungary with 15+ years in IT. I spent years as a sysadmin at a multinational energy company (VINCI Energies), managing infrastructure across multiple sites, before moving into full-time software development.
+        <p class="text-lg text-text-secondary leading-relaxed mb-6">
+            I’ve been working in IT for over 15 years, starting on the infrastructure side before moving fully into software engineering.
+            Early in my career I managed enterprise infrastructure across multiple sites in a large multinational environment, where stability, documentation, and operational discipline were essential.
         </p>
-        <p class="text-text-secondary leading-relaxed mb-4">
-            Over the years I've built a wide range of systems: a CRM for Hungary's leading cash register provider, IoT loyalty terminals on Raspberry Pi, industrial safety documentation software for companies like MOL and Egis, and a central government system for development policy, managing EU and national funding programs.
+
+        <p class="text-lg text-text-secondary leading-relaxed mb-6">
+            That background still shapes how I build software today. I focus on systems that remain maintainable under pressure
+            and understandable months or years later.
         </p>
-        <p class="text-text-secondary leading-relaxed mb-4">
-            Today my focus is the Laravel ecosystem, with deep expertise in FilamentPHP for admin panels and dashboards. I handle everything end-to-end: backend logic, frontend UI, database design, server deployment, and ongoing maintenance.
+
+        <p class="text-lg text-text-secondary leading-relaxed mb-6">
+            Over the years I’ve worked on CRM platforms, industrial safety software, IoT hardware integrations,
+            and public-sector systems handling large-scale operational workflows. These environments required precision,
+            auditability, and long-term reliability.
         </p>
-        <p class="text-text-secondary leading-relaxed mb-6">
-            I also run my own e-commerce business selling laser-cut wooden wall art &mdash; built entirely on my own stack, with automated Blender 3D rendering and image processing pipelines. That means I understand both the developer's and the business owner's perspective.
+
+        <p class="text-lg text-text-secondary leading-relaxed mb-8">
+            Running my own e-commerce business adds another layer: I build and operate the same kind of systems I deliver to clients.
+            Every automation, pipeline, and dashboard I create is grounded in real business constraints —
+            time, cost, and repeatability.
         </p>
 
         {{-- Quick facts --}}
         <div class="clear-left grid grid-cols-2 gap-3">
             @foreach ([
-                'Based in Hungary (CET)',
-                'English & Hungarian',
                 '15+ years in IT',
-                'CS degree (BSc)',
-                'Available 20-40 hrs/week',
+                'BSc in Computer Science',
+                'Laravel • Filament • TALL stack',
+                'English & Hungarian',
+                'Available 20–40 hrs/week',
                 'Remote & async-friendly',
             ] as $fact)
                 <div class="font-mono text-sm text-text-secondary flex items-center gap-2">

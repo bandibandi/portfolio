@@ -130,12 +130,15 @@ new class extends Component
             <div>
                 <label for="message" class="block text-sm font-medium text-text-secondary mb-1">Message</label>
                 <textarea
-                    wire:model.blur="message"
-                    id="message"
+                    wire:model="message"
                     rows="5"
+                    class="w-full rounded-lg bg-bg-deep border border-white/6 px-4 py-3 text-text-primary focus:border-accent focus:outline-none"
                     placeholder="Tell me about your project..."
-                    class="w-full bg-bg-card border border-white/6 rounded-lg px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:outline-none focus:border-accent transition-colors resize-none"
                 ></textarea>
+
+                <p class="text-xs text-text-secondary/40 mt-2">
+                    A few lines about your project are enough to begin.
+                </p>
                 @error('message')
                     <p class="text-accent-red text-xs mt-1">{{ $message }}</p>
                 @enderror

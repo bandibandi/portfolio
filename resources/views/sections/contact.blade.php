@@ -3,11 +3,24 @@
         <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
         Get in touch
     </p>
-    <h2 class="text-2xl font-semibold tracking-tight mb-3">Let's work together</h2>
-    <p class="text-text-secondary mb-12">
-        Available for freelance projects, contract work, and long-term partnerships. Reach me at
-        <a href="mailto:hello@andrashorvath.dev" class="text-accent hover:underline">hello@andrashorvath.dev</a>
-        or fill out the form below.
+
+    <h2 class="text-2xl font-semibold tracking-tight mb-3">Let’s work together</h2>
+
+    <p class="text-text-secondary mb-4">
+        If you’re looking for a reliable way to replace spreadsheets, automate internal workflows,
+        or build a production-grade admin system, I can help.
+    </p>
+
+    <p class="text-text-secondary mb-6">
+        Email me at
+        <a href="mailto:hello@andrashorvath.dev" class="text-accent hover:underline">
+            hello@andrashorvath.dev
+        </a>
+        or use the form below.
+    </p>
+
+    <p class="font-mono text-sm text-text-secondary/70 mb-12">
+        Usually reply within <span class="text-text-primary">24 hours</span>.
     </p>
 
     {{-- Contact Form --}}
