@@ -10,7 +10,7 @@
         @foreach ([
             ['icon' => 'https://cdn.simpleicons.org/laravel/FF2D20', 'name' => 'Laravel', 'desc' => 'Backend foundation. Routing, queues, APIs, auth.'],
             ['icon' => 'https://raw.githubusercontent.com/filamentphp/filament/3.x/docs-assets/images/icon.png', 'name' => 'FilamentPHP', 'desc' => 'Admin panels, dashboards, roles & permissions.'],
-            ['icon' => 'https://cdn.simpleicons.org/livewire/FB70A9', 'name' => 'Livewire', 'desc' => 'Reactive UI without leaving PHP. Real-time components.'],
+            ['icon' => 'https://cdn.simpleicons.org/livewire/FB70A9', 'name' => 'Livewire', 'desc' => 'Reactive UI, real-time components.'],
             ['icon' => 'https://cdn.simpleicons.org/alpinedotjs/8BC0D0', 'name' => 'Alpine.js', 'desc' => 'Lightweight interactivity. Dropdowns, modals, toggles.'],
             ['icon' => 'https://cdn.simpleicons.org/tailwindcss/06B6D4', 'name' => 'Tailwind CSS', 'desc' => 'Utility-first styling. Consistent, responsive design.'],
             ['icon' => 'https://cdn.simpleicons.org/mysql/4479A1', 'name' => 'MySQL', 'desc' => 'Database design, optimization, migrations.'],
@@ -21,8 +21,8 @@
                 <div class="mb-3">
                     <img src="{{ $tech['icon'] }}" alt="{{ $tech['name'] }}" class="w-9 h-9 {{ $tech['name'] === 'FilamentPHP' ? 'rounded' : '' }}" loading="lazy">
                 </div>
-                <h4 class="text-[0.95rem] font-semibold mb-1">{{ $tech['name'] }}</h4>
-                <p class="text-[0.85rem] text-text-secondary leading-snug">{{ $tech['desc'] }}</p>
+                <h4 class="text-base font-semibold mb-1">{{ $tech['name'] }}</h4>
+                <p class="text-sm text-text-secondary leading-snug">{{ $tech['desc'] }}</p>
             </div>
         @endforeach
     </div>
