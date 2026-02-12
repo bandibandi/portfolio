@@ -4,6 +4,8 @@ use Livewire\Component;
 use Livewire\Attributes\Validate;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\Http;
 
 new class extends Component
 {
@@ -16,17 +18,55 @@ new class extends Component
     #[Validate('required|min:10|max:2000')]
     public string $message = '';
 
+    public string $website = '';
+
+    public string $turnstileToken = '';
+
     public bool $sent = false;
+    public string $error = '';
 
     public function submit(): void
     {
+        $this->error = '';
+
+        // Honeypot — bots fill hidden fields
+        if ($this->website !== '') {
+            $this->sent = true;
+            return;
+        }
+
+        // Rate limiting — 3 per hour per IP
+        $key = 'contact-form:' . request()->ip();
+        if (RateLimiter::tooManyAttempts($key, 3)) {
+            $seconds = RateLimiter::availableIn($key);
+            $minutes = (int) ceil($seconds / 60);
+            $this->error = "Too many messages. Please try again in {$minutes} minute(s).";
+            return;
+        }
+
+        // Turnstile verification
+        if (config('services.turnstile.secret_key')) {
+            $response = Http::asForm()->post('https://challenges.cloudflare.com/turnstile/v0/siteverify', [
+                'secret' => config('services.turnstile.secret_key'),
+                'response' => $this->turnstileToken,
+                'remoteip' => request()->ip(),
+            ]);
+
+            if (! $response->json('success')) {
+                $this->error = 'Bot verification failed. Please try again.';
+                return;
+            }
+        }
+
         $this->validate();
 
         Mail::to(config('mail.from.address'))->send(
             new ContactMail($this->name, $this->email, $this->message)
         );
 
-        $this->reset(['name', 'email', 'message']);
+        RateLimiter::hit($key, 3600);
+
+        $this->reset(['name', 'email', 'message', 'turnstileToken', 'error']);
         $this->sent = true;
     }
 };
@@ -43,6 +83,19 @@ new class extends Component
         </div>
     @else
         <form wire:submit="submit" class="space-y-4">
+            {{-- Honeypot — hidden from humans, bots fill it --}}
+            <div class="absolute opacity-0 -z-10" aria-hidden="true" tabindex="-1">
+                <label for="website">Website</label>
+                <input wire:model="website" type="text" id="website" name="website" autocomplete="off" tabindex="-1">
+            </div>
+
+            {{-- Error message --}}
+            @if ($error)
+                <div class="bg-accent-red/10 border border-accent-red/30 rounded-lg p-3 text-accent-red text-sm" role="alert">
+                    {{ $error }}
+                </div>
+            @endif
+
             {{-- Name --}}
             <div>
                 <label for="name" class="block text-sm font-medium text-text-secondary mb-1">Name</label>
@@ -87,6 +140,27 @@ new class extends Component
                     <p class="text-accent-red text-xs mt-1">{{ $message }}</p>
                 @enderror
             </div>
+
+            {{-- Cloudflare Turnstile --}}
+            @if (config('services.turnstile.site_key'))
+                <div
+                    x-data
+                    x-init="
+                        const wait = setInterval(() => {
+                            if (typeof turnstile !== 'undefined') {
+                                clearInterval(wait);
+                                turnstile.render($refs.turnstile, {
+                                    sitekey: '{{ config('services.turnstile.site_key') }}',
+                                    theme: 'dark',
+                                    callback: (token) => $wire.set('turnstileToken', token),
+                                });
+                            }
+                        }, 100)
+                    "
+                >
+                    <div x-ref="turnstile"></div>
+                </div>
+            @endif
 
             {{-- Submit --}}
             <button

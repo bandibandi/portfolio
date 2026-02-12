@@ -24,6 +24,9 @@
 
     <title>{{ $title ?? 'andrashorvath.dev — Full-Stack Laravel Developer' }}</title>
 
+    {{-- Favicon --}}
+    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,11 +34,16 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
+
+    {{-- Cloudflare Turnstile --}}
+    @if (config('services.turnstile.site_key'))
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+    @endif
 </head>
 <body class="bg-bg-deep text-text-primary font-sans antialiased">
 
     {{-- Skip to content (accessibility) --}}
-    <a href="#hero" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-accent focus:text-bg-deep focus:rounded-lg focus:font-medium focus:text-sm">
+    <a href="#hero" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:px-4 focus:py-2 focus:bg-accent focus:text-bg-deep focus:rounded-lg focus:font-medium focus:text-sm">
         Skip to content
     </a>
 
