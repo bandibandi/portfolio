@@ -1,4 +1,4 @@
-<section id="hero" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+<section id="hero" class="min-h-[75vh] flex items-center justify-center pt-16 relative overflow-hidden">
     {{-- Floating glow --}}
     <div class="absolute -top-[40%] right-[10%] w-250 h-250 bg-[radial-gradient(circle,rgba(122,162,247,0.08),transparent_50%)] pointer-events-none animate-float blur-3xl"></div>
 
@@ -12,21 +12,21 @@
             &amp; <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">web apps</span>
             that run real businesses.
         </h1>
-        <p class="text-[1.15rem] text-text-secondary max-w-2xl leading-relaxed mb-10">
-            Full-stack Laravel developer specializing in FilamentPHP. I don't build demos &mdash; I build systems that handle real customers, real payments, and real data. Based in Hungary, working globally.
+        <p class="text-lg text-text-secondary max-w-4xl leading-relaxed mb-10">
+            Full-stack Laravel developer specializing in FilamentPHP and the TALL stack, with 15+ years of experience across multinationals, SMEs, government, and my own e-commerce business. I build end-to-end systems that handle real customers, real payments, and real data. Based in Hungary, working globally.
         </p>
         <div class="flex flex-wrap gap-4">
             <a
                 href="#projects"
-                class="px-7 py-3 rounded-lg font-medium text-[0.9rem] bg-accent text-bg-deep hover:shadow-[0_0_30px_rgba(122,162,247,0.15)] hover:-translate-y-0.5 transition-all duration-300"
+                class="px-7 py-3 rounded-lg font-medium text-base bg-accent text-bg-deep hover:shadow-[0_0_30px_rgba(122,162,247,0.15)] hover:-translate-y-0.5 transition-all duration-300"
             >
                 See my work
             </a>
             <a
                 href="#demo"
-                class="px-7 py-3 rounded-lg font-medium text-[0.9rem] border border-white/6 text-text-primary hover:border-accent hover:text-accent transition-all duration-300"
+                class="px-7 py-3 rounded-lg font-medium text-base border border-white/6 text-text-primary hover:border-accent hover:text-accent transition-all duration-300"
             >
-                Try live admin demo &rarr;
+                Admin demo (soon) &rarr;
             </a>
         </div>
     </div>

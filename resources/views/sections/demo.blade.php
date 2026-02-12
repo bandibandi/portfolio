@@ -1,6 +1,6 @@
 <div id="demo" class="relative bg-bg-card border border-white/6 rounded-xl p-12 max-md:p-8 text-center overflow-hidden max-w-275 mx-auto mb-16 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-linear-to-r before:from-transparent before:via-accent before:to-transparent">
-    <span class="inline-block font-mono text-[0.7rem] px-4 py-1.5 rounded-full bg-accent-green/10 text-accent-green border border-accent-green/20 tracking-[1px] uppercase mb-6">
-        &#9679; Live &amp; Interactive
+    <span class="inline-block font-mono text-xs px-4 py-1.5 rounded-full bg-accent-yellow/10 text-accent-yellow border border-accent-yellow/20 tracking-[1px] uppercase mb-6">
+        &#9679; Coming Soon
     </span>
     <h2 class="text-[1.8rem] font-semibold tracking-tight mb-4">Try the Admin Panel</h2>
     <p class="text-text-secondary max-w-125 mx-auto mb-8">
@@ -24,11 +24,10 @@
     </div>
 
     <br>
-    <a
-        href="#"
-        class="inline-block px-7 py-3 rounded-lg font-medium text-[0.9rem] bg-accent text-bg-deep hover:shadow-[0_0_30px_rgba(122,162,247,0.15)] hover:-translate-y-0.5 transition-all duration-300"
+    <span
+        class="inline-block px-7 py-3 rounded-lg font-medium text-base bg-accent/30 text-accent/50 cursor-not-allowed"
     >
         Launch Admin Demo &rarr;
-    </a>
+    </span>
     <p class="text-sm text-text-secondary/50 mt-6">Read-only access &middot; No real customer data &middot; Seeded with sample content</p>
 </div>
