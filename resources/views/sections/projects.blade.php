@@ -61,10 +61,10 @@
                 </div>
 
                 <div class="flex gap-4">
-                    <a href="https://nordwoodart.hu" target="_blank" rel="noopener noreferrer" class="font-mono text-sm text-text-secondary hover:text-accent transition-colors flex items-center gap-1.5">
+                    <a href="https://nordwoodart.hu" target="_blank" rel="noopener noreferrer" class="font-mono text-sm text-text-secondary underline decoration-text-secondary/30 hover:text-accent hover:decoration-accent transition-colors flex items-center gap-1.5">
                         &nearr; Live site
                     </a>
-                    <a href="#demo" class="font-mono text-sm text-text-secondary hover:text-accent transition-colors flex items-center gap-1.5">
+                    <a href="#demo" class="font-mono text-sm text-text-secondary underline decoration-text-secondary/30 hover:text-accent hover:decoration-accent transition-colors flex items-center gap-1.5">
                         &#9889; Admin panel demo (soon)
                     </a>
                 </div>

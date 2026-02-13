@@ -104,7 +104,7 @@ new class extends Component
                     type="text"
                     id="name"
                     placeholder="Your name"
-                    class="w-full bg-bg-card border border-white/6 rounded-lg px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:outline-none focus:border-accent transition-colors"
+                    class="w-full bg-bg-card border border-white/6 rounded-lg px-4 py-3 text-text-primary placeholder-text-secondary focus:outline-none focus:border-accent transition-colors"
                 >
                 @error('name')
                     <p class="text-accent-red text-xs mt-1">{{ $message }}</p>
@@ -119,7 +119,7 @@ new class extends Component
                     type="email"
                     id="email"
                     placeholder="you@example.com"
-                    class="w-full bg-bg-card border border-white/6 rounded-lg px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:outline-none focus:border-accent transition-colors"
+                    class="w-full bg-bg-card border border-white/6 rounded-lg px-4 py-3 text-text-primary placeholder-text-secondary focus:outline-none focus:border-accent transition-colors"
                 >
                 @error('email')
                     <p class="text-accent-red text-xs mt-1">{{ $message }}</p>
@@ -132,11 +132,11 @@ new class extends Component
                 <textarea
                     wire:model="message"
                     rows="5"
-                    class="w-full rounded-lg bg-bg-deep border border-white/6 px-4 py-3 text-text-primary focus:border-accent focus:outline-none"
+                    class="w-full rounded-lg bg-bg-deep border border-white/6 px-4 py-3 text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none"
                     placeholder="Tell me about your project..."
                 ></textarea>
 
-                <p class="text-xs text-text-secondary/40 mt-2">
+                <p class="text-xs text-text-secondary mt-2">
                     A few lines about your project are enough to begin.
                 </p>
                 @error('message')

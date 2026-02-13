@@ -39,7 +39,7 @@
 
     <br>
 
-    <span class="inline-block px-7 py-3 rounded-lg font-medium text-base bg-accent/30 text-accent/50 cursor-not-allowed">
+    <span class="inline-block px-7 py-3 rounded-lg font-medium text-base bg-accent/10 text-text-secondary cursor-not-allowed">
         Launch Admin Demo &rarr;
     </span>
 
