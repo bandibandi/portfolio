@@ -24,7 +24,7 @@
     </p>
 
     {{-- Contact Form --}}
-    <div class="max-w-lg mx-auto">
-        @livewire('contact-form')
+    <div class="max-w-lg mx-auto" id="contact-form-slot">
+    <div class="text-text-secondary text-sm">Loading form…</div>
     </div>
 </section>

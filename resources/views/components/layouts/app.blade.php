@@ -66,5 +66,27 @@
     </footer>
 
     @livewireScripts
+    <script>
+    (function () {
+        const slot = document.getElementById('contact-form-slot');
+        if (!slot) return;
+
+        const load = async () => {
+        const html = await fetch('/contact-fragment', {
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        }).then(r => r.text());
+        slot.innerHTML = html;
+        };
+
+        // lazy: when near viewport
+        const obs = new IntersectionObserver((entries) => {
+        if (!entries[0].isIntersecting) return;
+        obs.disconnect();
+        load();
+        }, { rootMargin: '400px' });
+
+        obs.observe(slot);
+    })();
+    </script>    
 </body>
 </html>
