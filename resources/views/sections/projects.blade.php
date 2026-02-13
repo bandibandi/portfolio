@@ -72,7 +72,7 @@
         </article>
 
         {{-- Coming Soon --}}
-        <article class="bg-bg-card border border-white/6 border-dashed rounded-xl p-8 opacity-70">
+        <article class="bg-bg-card border border-white/6 border-dashed rounded-xl p-8">
             <p class="font-mono text-xs text-accent-yellow uppercase tracking-[1.5px] mb-2">Coming soon</p>
             <h3 class="text-[1.4rem] font-semibold tracking-tight mb-3">Open Source &amp; GitHub Projects</h3>
             <p class="text-text-secondary text-base leading-relaxed mb-6">

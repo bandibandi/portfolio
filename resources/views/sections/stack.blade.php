@@ -8,14 +8,14 @@
 
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         @foreach ([
-            ['icon' => 'https://cdn.simpleicons.org/laravel/FF2D20', 'name' => 'Laravel', 'desc' => 'Backend foundation. Routing, queues, APIs, auth.'],
-            ['icon' => 'https://raw.githubusercontent.com/filamentphp/filament/3.x/docs-assets/images/icon.png', 'name' => 'FilamentPHP', 'desc' => 'Admin panels, dashboards, roles & permissions.'],
-            ['icon' => 'https://cdn.simpleicons.org/livewire/FB70A9', 'name' => 'Livewire', 'desc' => 'Reactive UI, real-time components.'],
-            ['icon' => 'https://cdn.simpleicons.org/alpinedotjs/8BC0D0', 'name' => 'Alpine.js', 'desc' => 'Lightweight interactivity. Dropdowns, modals, toggles.'],
-            ['icon' => 'https://cdn.simpleicons.org/tailwindcss/06B6D4', 'name' => 'Tailwind CSS', 'desc' => 'Utility-first styling. Consistent, responsive design.'],
-            ['icon' => 'https://cdn.simpleicons.org/mysql/4479A1', 'name' => 'MySQL', 'desc' => 'Database design, optimization, migrations.'],
-            ['icon' => 'https://cdn.simpleicons.org/python/3776AB', 'name' => 'Python', 'desc' => 'Automation, image processing, Blender scripting.'],
-            ['icon' => 'https://cdn.simpleicons.org/linux/FCC624', 'name' => 'Linux', 'desc' => 'Server setup, deployment, Docker, SSH, cron.'],
+            ['icon' => '/images/icon-laravel.svg', 'name' => 'Laravel', 'desc' => 'Backend foundation. Routing, queues, APIs, auth.'],
+            ['icon' => '/images/filament-icon.png', 'name' => 'FilamentPHP', 'desc' => 'Admin panels, dashboards, roles & permissions.'],
+            ['icon' => '/images/icon-livewire.svg', 'name' => 'Livewire', 'desc' => 'Reactive UI, real-time components.'],
+            ['icon' => '/images/icon-alpinejs.svg', 'name' => 'Alpine.js', 'desc' => 'Lightweight interactivity. Dropdowns, modals, toggles.'],
+            ['icon' => '/images/icon-tailwindcss.svg', 'name' => 'Tailwind CSS', 'desc' => 'Utility-first styling. Consistent, responsive design.'],
+            ['icon' => '/images/icon-mysql.svg', 'name' => 'MySQL', 'desc' => 'Database design, optimization, migrations.'],
+            ['icon' => '/images/icon-python.svg', 'name' => 'Python', 'desc' => 'Automation, image processing, Blender scripting.'],
+            ['icon' => '/images/icon-linux.svg', 'name' => 'Linux', 'desc' => 'Server setup, deployment, Docker, SSH, cron.'],
         ] as $tech)
             <div class="bg-bg-card border border-white/6 rounded-xl p-6 hover:bg-bg-card-hover hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
                 <div class="mb-3">
