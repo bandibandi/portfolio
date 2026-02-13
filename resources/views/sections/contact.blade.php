@@ -24,7 +24,7 @@
     </p>
 
     {{-- Contact Form --}}
-    <div class="max-w-lg mx-auto" id="contact-form-slot" style="min-height: 480px">
+    <div class="max-w-lg mx-auto" id="contact-form-slot" style="min-h-[520px]">
     <div class="text-text-secondary text-sm">Loading form…</div>
     </div>
 </section>

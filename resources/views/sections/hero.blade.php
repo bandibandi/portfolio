@@ -1,4 +1,5 @@
 <section id="hero" class="min-h-[75vh] flex items-center justify-center pt-16 relative overflow-hidden">
+
     {{-- Floating glow --}}
     <div class="absolute -top-[40%] right-[10%] w-250 h-250 bg-[radial-gradient(circle,rgba(122,162,247,0.08),transparent_50%)] pointer-events-none animate-float blur-3xl"></div>
 
@@ -9,15 +10,22 @@
         </p>
 
         <h1 class="text-balance text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">
-            I build <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">admin panels</span>
-            &amp; <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">web apps</span>
+            I build
+            <span class="hero-gradient bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent opacity-0 transition-opacity duration-300">
+                admin panels
+            </span>
+            &amp;
+            <span class="hero-gradient bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent opacity-0 transition-opacity duration-300">
+                web apps
+            </span>
             that run real businesses.
         </h1>
 
         <p class="text-lg text-text-secondary max-w-4xl leading-relaxed mb-10">
-            Used daily by <strong class="text-text-primary font-semibold">1,000+ active users</strong>. I design and build custom admin systems,
-            internal tools, and automation platforms for businesses that outgrow spreadsheets. My work helps teams operate faster, reduce manual effort,
-            and scale without chaos.
+            Used daily by <strong class="text-text-primary font-semibold">1,000+ active users</strong>.
+            I design and build custom admin systems, internal tools, and automation platforms
+            for businesses that outgrow spreadsheets. My work helps teams operate faster,
+            reduce manual effort, and scale without chaos.
         </p>
 
         <div class="flex flex-wrap gap-4">
@@ -27,13 +35,20 @@
             >
                 See my work
             </a>
+
             <a
                 href="#demo"
                 class="px-7 py-3 rounded-lg font-medium text-base border border-white/6 text-text-primary hover:border-accent hover:text-accent transition-all duration-300"
             >
-                Admin demo (soon) &rarr;
+                Admin demo (soon) →
             </a>
         </div>
     </div>
 </section>
 
+<script>
+requestAnimationFrame(() => {
+  document.querySelectorAll('.hero-gradient')
+    .forEach(el => el.classList.remove('opacity-0'));
+});
+</script>
