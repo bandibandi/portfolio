@@ -19,7 +19,7 @@
         ] as $tech)
             <div class="bg-bg-card border border-white/6 rounded-xl p-6 hover:bg-bg-card-hover hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
                 <div class="mb-3">
-                    <img src="{{ $tech['icon'] }}" alt="{{ $tech['name'] }}" class="w-9 h-9 {{ $tech['name'] === 'FilamentPHP' ? 'rounded' : '' }}" loading="lazy">
+                    <img src="{{ $tech['icon'] }}" alt="{{ $tech['name'] }}" width="36" height="36" class="w-9 h-9 {{ $tech['name'] === 'FilamentPHP' ? 'rounded' : '' }}" loading="lazy">
                 </div>
                 <h4 class="text-base font-semibold mb-1">{{ $tech['name'] }}</h4>
                 <p class="text-sm text-text-secondary leading-snug">{{ $tech['desc'] }}</p>

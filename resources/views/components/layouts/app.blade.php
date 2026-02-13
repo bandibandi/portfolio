@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Andras Horvath — Full-stack Laravel developer specializing in FilamentPHP. Admin panels, web apps, e-commerce. Based in Hungary, working globally.">
+    <meta name="description" content="I design and build custom admin systems, internal tools, and automation platforms for businesses that outgrow spreadsheets.">
     <meta name="author" content="Andras Horvath">
     <meta name="robots" content="index, follow">
 
     {{-- Open Graph --}}
     <meta property="og:title" content="{{ $title ?? 'andrashorvath.dev — Full-Stack Laravel Developer' }}">
-    <meta property="og:description" content="I build admin panels & web apps that run real businesses. Laravel, FilamentPHP, Livewire.">
+    <meta property="og:description" content="I design and build custom admin systems, internal tools, and automation platforms for businesses that outgrow spreadsheets.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:locale" content="en_US">
 
+    <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
+
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $title ?? 'andrashorvath.dev — Full-Stack Laravel Developer' }}">
-    <meta name="twitter:description" content="I build admin panels & web apps that run real businesses. Laravel, FilamentPHP, Livewire.">
+    <meta name="twitter:description" content="I design and build custom admin systems, internal tools, and automation platforms for businesses that outgrow spreadsheets.">
+    <meta name="twitter:image" content="{{ asset('images/og-image.jpg') }}">
 
     {{-- Canonical --}}
     <link rel="canonical" href="{{ url('/') }}">
@@ -27,13 +30,33 @@
     {{-- Favicon --}}
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
 
-    {{-- Fonts --}}
+    {{-- Fonts (non-render-blocking) --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
+
+    {{-- Structured Data --}}
+    <script type="application/ld+json">{!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'ProfessionalService',
+        'name' => 'Andras Horvath — Full-Stack Laravel Developer',
+        'url' => url('/'),
+        'logo' => asset('favicon.svg'),
+        'description' => 'I design and build custom admin systems, internal tools, and automation platforms for businesses that outgrow spreadsheets.',
+        'address' => ['@type' => 'PostalAddress', 'addressCountry' => 'HU'],
+        'founder' => [
+            '@type' => 'Person',
+            'name' => 'Andras Horvath',
+            'jobTitle' => 'Full-Stack Laravel Developer',
+            'url' => url('/'),
+        ],
+        'knowsAbout' => ['Laravel', 'FilamentPHP', 'Livewire', 'Tailwind CSS', 'PHP', 'MySQL', 'Alpine.js'],
+        'areaServed' => 'Worldwide',
+    ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}</script>
 
     {{-- Cloudflare Turnstile --}}
     @if (config('services.turnstile.site_key'))
@@ -72,9 +95,18 @@
         if (!slot) return;
 
         const load = async () => {
-        const html = await fetch('/contact-fragment', {
+        const res = await fetch('/contact-fragment', {
             headers: { 'X-Requested-With': 'XMLHttpRequest' }
-        }).then(r => r.text());
+        });
+        const token = res.headers.get('X-CSRF-TOKEN');
+        const html = await res.text();
+
+        // Pass the CSRF token to Livewire before injecting the component
+        if (token) {
+            const el = document.querySelector('[data-csrf]');
+            if (el) el.setAttribute('data-csrf', token);
+        }
+
         slot.innerHTML = html;
         };
 

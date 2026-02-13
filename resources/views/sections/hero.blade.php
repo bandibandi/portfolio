@@ -11,11 +11,11 @@
 
         <h1 class="text-balance text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">
             I build
-            <span class="hero-gradient bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent opacity-0 transition-opacity duration-300">
+            <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">
                 admin panels
             </span>
             &amp;
-            <span class="hero-gradient bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent opacity-0 transition-opacity duration-300">
+            <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">
                 web apps
             </span>
             that run real businesses.
@@ -45,10 +45,3 @@
         </div>
     </div>
 </section>
-
-<script>
-requestAnimationFrame(() => {
-  document.querySelectorAll('.hero-gradient')
-    .forEach(el => el.classList.remove('opacity-0'));
-});
-</script>

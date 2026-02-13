@@ -24,5 +24,6 @@ Route::get('/', function () {
 ]);
 
 Route::get('/contact-fragment', function () {
-    return view('partials.contact-form-fragment');
+    return response(view('partials.contact-form-fragment')->render())
+        ->header('X-CSRF-TOKEN', csrf_token());
 });

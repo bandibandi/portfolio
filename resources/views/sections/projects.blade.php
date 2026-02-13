@@ -9,12 +9,17 @@
     <div class="space-y-8">
         {{-- NordWoodArt --}}
         <article class="bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
-            <img
-                src="{{ asset('images/nwa.jpg') }}"
-                alt="NordWoodArt e-commerce platform"
-                class="w-full h-105 max-md:h-65 object-cover object-top border-b border-white/6"
-                loading="lazy"
-            >
+            <picture>
+                <source srcset="{{ asset('images/nwa.webp') }}" type="image/webp">
+                <img
+                    src="{{ asset('images/nwa.jpg') }}"
+                    alt="NordWoodArt e-commerce platform"
+                    width="1440"
+                    height="900"
+                    class="w-full h-105 max-md:h-65 object-cover object-top border-b border-white/6"
+                    loading="lazy"
+                >
+            </picture>
 
             <div class="p-8">
                 <p class="font-mono text-xs text-accent-green uppercase tracking-[1.5px] mb-2">E-Commerce Platform</p>

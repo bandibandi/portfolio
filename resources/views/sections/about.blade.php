@@ -7,12 +7,17 @@
 
     <div class="mt-12">
         {{-- Photo --}}
-        <img
-            src="{{ asset('images/photo_AH.jpg') }}"
-            alt="Andras Horvath"
-            class="float-left w-64 h-64 rounded-xl object-cover border border-white/6 mr-10 mb-6 max-md:float-none max-md:block max-md:mx-auto max-md:mr-auto max-md:w-52 max-md:h-52 max-md:mb-8"
-            loading="lazy"
-        >
+        <picture>
+            <source srcset="{{ asset('images/photo_AH.webp') }}" type="image/webp">
+            <img
+                src="{{ asset('images/photo_AH.jpg') }}"
+                alt="Andras Horvath"
+                width="272"
+                height="272"
+                class="float-left w-64 h-64 rounded-xl object-cover border border-white/6 mr-10 mb-6 max-md:float-none max-md:block max-md:mx-auto max-md:mr-auto max-md:w-52 max-md:h-52 max-md:mb-8"
+                loading="lazy"
+            >
+        </picture>
 
         {{-- Bio --}}
         <p class="text-lg text-text-secondary leading-relaxed mb-6">

@@ -6,8 +6,8 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --font-sans: 'Outfit', 'Outfit Fallback', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', ui-monospace, monospace;
 
     --color-bg-deep: #0d0f14;
     --color-bg-card: #141620;
@@ -20,6 +20,25 @@
     --color-accent-purple: #bb9af7;
     --color-accent-red: #f7768e;
     --color-border: #1e2236;
+}
+
+/* Font fallback metrics to minimize CLS during font swap */
+@font-face {
+    font-family: 'Outfit Fallback';
+    src: local('Arial'), local('Helvetica');
+    size-adjust: 100.4%;
+    ascent-override: 101%;
+    descent-override: 27%;
+    line-gap-override: 0%;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono Fallback';
+    src: local('Courier New'), local('monospace');
+    size-adjust: 95%;
+    ascent-override: 103%;
+    descent-override: 27%;
+    line-gap-override: 0%;
 }
 
 /* Smooth scrolling */
