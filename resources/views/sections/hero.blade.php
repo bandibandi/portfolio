@@ -1,63 +1,54 @@
-<section id="contact" class="py-24 max-w-275 mx-auto px-4 sm:px-8">
-    <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
-        <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
-        Get in touch
-    </p>
+<section id="hero" class="min-h-[75vh] flex items-center justify-center pt-16 relative overflow-hidden">
 
-    <h2 class="text-2xl font-semibold tracking-tight mb-3">Let’s work together</h2>
+    {{-- Floating glow --}}
+    <div class="absolute -top-[40%] right-[10%] w-250 h-250 bg-[radial-gradient(circle,rgba(122,162,247,0.08),transparent_50%)] pointer-events-none animate-float blur-3xl"></div>
 
-    <p class="text-text-secondary mb-4">
-        If you’re looking for a reliable way to replace spreadsheets, automate internal workflows,
-        or build a production-grade admin system, I can help.
-    </p>
+    <div class="max-w-275 w-full px-4 sm:px-8 relative z-10">
+        <p class="font-mono text-sm text-accent mb-6 flex items-center gap-2.5">
+            <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
+            Available for freelance work
+        </p>
 
-    <p class="text-text-secondary mb-6">
-        Email me at
-        <a href="mailto:hello@andrashorvath.dev" class="text-accent hover:underline">
-            hello@andrashorvath.dev
-        </a>
-        or use the form below.
-    </p>
+        <h1 class="text-balance text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">
+            I build
+            <span class="hero-gradient bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent opacity-0 transition-opacity duration-300">
+                admin panels
+            </span>
+            &amp;
+            <span class="hero-gradient bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent opacity-0 transition-opacity duration-300">
+                web apps
+            </span>
+            that run real businesses.
+        </h1>
 
-    <p class="font-mono text-sm text-text-secondary/70 mb-12">
-        Usually reply within <span class="text-text-primary">24 hours</span>.
-    </p>
+        <p class="text-lg text-text-secondary max-w-4xl leading-relaxed mb-10">
+            Used daily by <strong class="text-text-primary font-semibold">1,000+ active users</strong>.
+            I design and build custom admin systems, internal tools, and automation platforms
+            for businesses that outgrow spreadsheets. My work helps teams operate faster,
+            reduce manual effort, and scale without chaos.
+        </p>
 
-    {{-- Contact Form (CLS-safe placeholder height + lazy slot) --}}
-    <div class="max-w-lg mx-auto min-h-[520px]" id="contact-form-slot" aria-live="polite">
-        {{-- Optional: lightweight skeleton so it doesn't feel empty --}}
-        <div class="rounded-xl border border-white/6 bg-bg-card/40 p-6">
-            <div class="h-4 w-28 bg-white/10 rounded mb-4"></div>
-            <div class="space-y-3">
-                <div class="h-11 bg-white/10 rounded"></div>
-                <div class="h-11 bg-white/10 rounded"></div>
-                <div class="h-28 bg-white/10 rounded"></div>
-                <div class="h-11 bg-white/10 rounded"></div>
-            </div>
-            <p class="text-xs text-text-secondary/50 mt-4">Loading contact form…</p>
+        <div class="flex flex-wrap gap-4">
+            <a
+                href="#projects"
+                class="px-7 py-3 rounded-lg font-medium text-base bg-accent text-bg-deep hover:shadow-[0_0_30px_rgba(122,162,247,0.15)] hover:-translate-y-0.5 transition-all duration-300"
+            >
+                See my work
+            </a>
+
+            <a
+                href="#demo"
+                class="px-7 py-3 rounded-lg font-medium text-base border border-white/6 text-text-primary hover:border-accent hover:text-accent transition-all duration-300"
+            >
+                Admin demo (soon) →
+            </a>
         </div>
     </div>
-
-    <script>
-        (function () {
-            const slot = document.getElementById('contact-form-slot');
-            if (!slot) return;
-
-            const load = async () => {
-                const html = await fetch('/contact-fragment', {
-                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
-                }).then(r => r.text());
-                slot.innerHTML = html;
-            };
-
-            // Lazy: load when near viewport (keeps initial render lighter)
-            const obs = new IntersectionObserver((entries) => {
-                if (!entries[0].isIntersecting) return;
-                obs.disconnect();
-                load();
-            }, { rootMargin: '400px' });
-
-            obs.observe(slot);
-        })();
-    </script>
 </section>
+
+<script>
+requestAnimationFrame(() => {
+  document.querySelectorAll('.hero-gradient')
+    .forEach(el => el.classList.remove('opacity-0'));
+});
+</script>
