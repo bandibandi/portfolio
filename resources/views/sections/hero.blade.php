@@ -8,7 +8,7 @@
             Available for freelance work
         </p>
 
-        <h1 class="text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">
+        <h1 class="text-balance text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">
             I build <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">admin panels</span>
             &amp; <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">web apps</span>
             that run real businesses.
