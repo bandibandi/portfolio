@@ -36,7 +36,7 @@
             ],
         ] as $service)
             <div class="relative bg-bg-card border border-white/6 rounded-xl p-8 hover:bg-bg-card-hover hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300 overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-accent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
-                <h4 class="text-[1.1rem] font-semibold mb-3">{{ $service['title'] }}</h4>
+                <h3 class="text-[1.1rem] font-semibold mb-3">{{ $service['title'] }}</h3>
                 <p class="text-base text-text-secondary leading-relaxed">{{ $service['description'] }}</p>
             </div>
         @endforeach

@@ -79,7 +79,7 @@
     <footer class="border-t border-border py-8 text-center font-mono text-[0.8rem] text-text-secondary" role="contentinfo">
         <div class="max-w-275 mx-auto px-4 sm:px-8">
             <p>&copy; {{ date('Y') }} Andras Horvath &mdash; Built with Laravel, Tailwind CSS &amp; &#9749;</p>
-            <p class="text-text-secondary/70 text-[0.75rem] mt-2">
+            <p class="text-text-secondary text-[0.75rem] mt-2">
                 Hungary &middot; CET (UTC+1) &middot; Available for remote work worldwide
             </p>
         </div>

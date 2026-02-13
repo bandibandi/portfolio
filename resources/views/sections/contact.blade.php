@@ -13,13 +13,13 @@
 
     <p class="text-text-secondary mb-6">
         Email me at
-        <a href="mailto:hello@andrashorvath.dev" class="text-accent hover:underline">
+        <a href="mailto:hello@andrashorvath.dev" class="text-accent underline decoration-accent/30 hover:decoration-accent">
             hello@andrashorvath.dev
         </a>
         or use the form below.
     </p>
 
-    <p class="font-mono text-sm text-text-secondary/70 mb-12">
+    <p class="font-mono text-sm text-text-secondary mb-12">
         Usually reply within <span class="text-text-primary">24 hours</span>.
     </p>
 

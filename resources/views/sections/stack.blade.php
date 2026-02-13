@@ -21,7 +21,7 @@
                 <div class="mb-3">
                     <img src="{{ $tech['icon'] }}" alt="{{ $tech['name'] }}" width="36" height="36" class="w-9 h-9 {{ $tech['name'] === 'FilamentPHP' ? 'rounded' : '' }}" loading="lazy">
                 </div>
-                <h4 class="text-base font-semibold mb-1">{{ $tech['name'] }}</h4>
+                <h3 class="text-base font-semibold mb-1">{{ $tech['name'] }}</h3>
                 <p class="text-sm text-text-secondary leading-snug">{{ $tech['desc'] }}</p>
             </div>
         @endforeach

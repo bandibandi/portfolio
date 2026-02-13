@@ -13,7 +13,7 @@
 
     {{-- GIF preview placeholder --}}
     <div class="mb-10 border border-white/6 rounded-lg overflow-hidden bg-bg-deep">
-        <div class="aspect-[16/9] flex items-center justify-center text-text-secondary/50 font-mono text-sm">
+        <div class="aspect-[16/9] flex items-center justify-center text-text-secondary font-mono text-sm">
             Demo preview GIF will appear here
         </div>
     </div>
@@ -43,7 +43,7 @@
         Launch Admin Demo &rarr;
     </span>
 
-    <p class="text-sm text-text-secondary/50 mt-6">
+    <p class="text-sm text-text-secondary mt-6">
         Read-only access · No real customer data · Seeded with sample content
     </p>
 </div>
