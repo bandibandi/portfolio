@@ -22,8 +22,7 @@
         </h1>
 
         <p class="text-lg text-text-secondary max-w-4xl leading-relaxed mb-10">
-            Used daily by <strong class="text-text-primary font-semibold">1,000+ active users</strong>.
-            I design and build custom admin systems, internal tools, and automation platforms
+            I design and build <strong class="text-text-primary font-semibold">custom admin systems, internal tools, and automation platforms</strong>
             for businesses that outgrow spreadsheets. My work helps teams operate faster,
             reduce manual effort, and scale without chaos.
         </p>
