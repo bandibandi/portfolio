@@ -1,4 +1,4 @@
-<section id="hero" class="min-h-[75vh] flex items-center justify-center pt-16 relative overflow-hidden">
+<section id="hero" class="min-h-[75vh] flex items-center justify-center pt-24 relative overflow-hidden">
 
     {{-- Floating glow --}}
     <div class="absolute -top-[40%] right-[10%] w-250 h-250 bg-[radial-gradient(circle,rgba(122,162,247,0.08),transparent_50%)] pointer-events-none animate-float blur-3xl will-change-transform"></div>

@@ -3,27 +3,125 @@
         <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
         What I work with
     </p>
+
     <h2 class="text-2xl font-semibold tracking-tight mb-3">Tech Stack</h2>
     <p class="text-text-secondary mb-12">Production-tested tools I use daily to build and ship.</p>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        @foreach ([
-            ['icon' => '/images/icon-laravel.svg', 'name' => 'Laravel', 'desc' => 'Backend foundation. Routing, queues, APIs, auth.'],
-            ['icon' => '/images/filament-icon.png', 'name' => 'FilamentPHP', 'desc' => 'Admin panels, dashboards, roles & permissions.'],
-            ['icon' => '/images/icon-livewire.svg', 'name' => 'Livewire', 'desc' => 'Reactive UI, real-time components.'],
-            ['icon' => '/images/icon-alpinejs.svg', 'name' => 'Alpine.js', 'desc' => 'Lightweight interactivity. Dropdowns, modals, toggles.'],
-            ['icon' => '/images/icon-tailwindcss.svg', 'name' => 'Tailwind CSS', 'desc' => 'Utility-first styling. Consistent, responsive design.'],
-            ['icon' => '/images/icon-mysql.svg', 'name' => 'MySQL', 'desc' => 'Database design, optimization, migrations.'],
-            ['icon' => '/images/icon-python.svg', 'name' => 'Python', 'desc' => 'Automation, image processing, Blender scripting.'],
-            ['icon' => '/images/icon-linux.svg', 'name' => 'Linux', 'desc' => 'Server setup, deployment, Docker, SSH, cron.'],
-        ] as $tech)
-            <div class="bg-bg-card border border-white/6 rounded-xl p-6 hover:bg-bg-card-hover hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
-                <div class="mb-3">
-                    <img src="{{ $tech['icon'] }}" alt="{{ $tech['name'] }}" width="36" height="36" class="w-9 h-9 {{ $tech['name'] === 'FilamentPHP' ? 'rounded' : '' }}" loading="lazy">
-                </div>
-                <h3 class="text-base font-semibold mb-1">{{ $tech['name'] }}</h3>
-                <p class="text-sm text-text-secondary leading-snug">{{ $tech['desc'] }}</p>
+    <div class="grid md:grid-cols-2 gap-6">
+
+        {{-- Core & Admin --}}
+        <div class="bg-bg-card border border-white/6 rounded-xl p-8 hover:border-accent/20 transition-colors duration-300">
+            <h3 class="text-base font-semibold tracking-wide mb-1">Core & Admin</h3>
+            <p class="text-sm text-text-secondary mb-6">Backend foundation, data layer, and operational control.</p>
+
+            <div class="space-y-4">
+                @foreach ([
+                    ['icon' => '/images/filament-icon.png', 'name' => 'FilamentPHP', 'desc' => 'Admin panels, dashboards, roles & permissions.', 'rounded' => true],
+                    ['icon' => '/images/icon-laravel.svg', 'name' => 'Laravel', 'desc' => 'Routing, queues, APIs, auth, Eloquent ORM.'],
+                    ['icon' => '/images/icon-mysql.svg', 'name' => 'MySQL', 'desc' => 'Schema design, migrations, query tuning.'],
+                ] as $tech)
+                    <div class="flex gap-3">
+                        <img
+                            src="{{ $tech['icon'] }}"
+                            alt="{{ $tech['name'] }}"
+                            width="28"
+                            height="28"
+                            class="w-7 h-7 mt-0.5 {{ !empty($tech['rounded']) ? 'rounded' : '' }}"
+                            loading="lazy"
+                        >
+                        <div>
+                            <div class="text-sm font-semibold leading-tight">{{ $tech['name'] }}</div>
+                            <div class="text-xs text-text-secondary leading-snug">{{ $tech['desc'] }}</div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-        @endforeach
+        </div>
+
+        {{-- App UI --}}
+        <div class="bg-bg-card border border-white/6 rounded-xl p-8 hover:border-accent/20 transition-colors duration-300">
+            <h3 class="text-base font-semibold tracking-wide mb-1">App UI</h3>
+            <p class="text-sm text-text-secondary mb-6">Reactive front-end and design system.</p>
+
+            <div class="space-y-4">
+                @foreach ([
+                    ['icon' => '/images/icon-livewire.svg', 'name' => 'Livewire', 'desc' => 'Server-driven UI, no JS needed.'],
+                    ['icon' => '/images/icon-alpinejs.svg', 'name' => 'Alpine.js', 'desc' => 'Dropdowns, modals, transitions.'],
+                    ['icon' => '/images/icon-tailwindcss.svg', 'name' => 'Tailwind CSS', 'desc' => 'Utility-first design system.'],
+                ] as $tech)
+                    <div class="flex gap-3">
+                        <img
+                            src="{{ $tech['icon'] }}"
+                            alt="{{ $tech['name'] }}"
+                            width="28"
+                            height="28"
+                            class="w-7 h-7 mt-0.5"
+                            loading="lazy"
+                        >
+                        <div>
+                            <div class="text-sm font-semibold leading-tight">{{ $tech['name'] }}</div>
+                            <div class="text-xs text-text-secondary leading-snug">{{ $tech['desc'] }}</div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+        {{-- Infrastructure --}}
+        <div class="bg-bg-card border border-white/6 rounded-xl p-8 hover:border-accent/20 transition-colors duration-300">
+            <h3 class="text-base font-semibold tracking-wide mb-1">Infrastructure</h3>
+            <p class="text-sm text-text-secondary mb-6">Deployment, edge layer, and stability.</p>
+
+            <div class="space-y-4">
+                @foreach ([
+                    ['icon' => '/images/icon-linux.svg', 'name' => 'Linux', 'desc' => 'VPS, SSH, cron, service management.'],
+                    ['icon' => '/images/icon-cloudflare.svg', 'name' => 'Cloudflare', 'desc' => 'Edge caching, DNS, SSL, DDoS protection.'],
+                ] as $tech)
+                    <div class="flex gap-3">
+                        <img
+                            src="{{ $tech['icon'] }}"
+                            alt="{{ $tech['name'] }}"
+                            width="28"
+                            height="28"
+                            class="w-7 h-7 mt-0.5"
+                            loading="lazy"
+                        >
+                        <div>
+                            <div class="text-sm font-semibold leading-tight">{{ $tech['name'] }}</div>
+                            <div class="text-xs text-text-secondary leading-snug">{{ $tech['desc'] }}</div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+        {{-- Automation --}}
+        <div class="bg-bg-card border border-white/6 rounded-xl p-8 hover:border-accent/20 transition-colors duration-300">
+            <h3 class="text-base font-semibold tracking-wide mb-1">Automation</h3>
+            <p class="text-sm text-text-secondary mb-6">Scripting, batch jobs, and deploy tooling.</p>
+
+            <div class="space-y-4">
+                @foreach ([
+                    ['icon' => '/images/icon-python.svg', 'name' => 'Python', 'desc' => 'Data pipelines, image generation, APIs.'],
+                    ['icon' => '/images/icon-bash.svg', 'name' => 'Bash', 'desc' => 'Deploy scripts, git hooks, cache ops.'],
+                ] as $tech)
+                    <div class="flex gap-3">
+                        <img
+                            src="{{ $tech['icon'] }}"
+                            alt="{{ $tech['name'] }}"
+                            width="28"
+                            height="28"
+                            class="w-7 h-7 mt-0.5"
+                            loading="lazy"
+                        >
+                        <div>
+                            <div class="text-sm font-semibold leading-tight">{{ $tech['name'] }}</div>
+                            <div class="text-xs text-text-secondary leading-snug">{{ $tech['desc'] }}</div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
     </div>
 </section>

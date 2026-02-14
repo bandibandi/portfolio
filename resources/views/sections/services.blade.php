@@ -4,9 +4,19 @@
         What I can build for you
     </p>
     <h2 class="text-2xl font-semibold tracking-tight mb-3">Services</h2>
-    <p class="text-text-secondary mb-12">
-        I design systems that replace manual processes, centralize operations, and give businesses reliable internal tools.
-    </p>
+<div class="mb-12 flex gap-4">
+    <span class="w-0.5 bg-accent/60 rounded-full self-stretch"></span>
+
+    <div>
+        <p class="text-text-secondary mb-2">
+            I design systems that replace manual processes, centralize operations, and give businesses reliable internal tools.
+        </p>
+
+        <p class="text-text-secondary/80 text-base">
+            Built fast and secure, with privacy in mind — backed by Cloudflare edge protection and practical analytics.
+        </p>
+    </div>
+</div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         @foreach ([

@@ -30,6 +30,10 @@
             and understandable months or years later.
         </p>
 
+        <div class="mt-6 border-l border-white/10 pl-4 text-sm leading-relaxed text-white/70">
+        
+        </div>
+
         <p class="text-lg text-text-secondary leading-relaxed mb-6">
             Over the years I’ve worked on CRM platforms, industrial safety software, IoT hardware integrations,
             and public-sector systems handling large-scale operational workflows. These environments required precision,
