@@ -39,7 +39,7 @@
                 href="#demo"
                 class="px-7 py-3 rounded-lg font-medium text-base border border-white/6 text-text-primary hover:border-accent hover:text-accent transition-all duration-300"
             >
-                Admin demo (soon) →
+                Live admin demo →
             </a>
         </div>
     </div>

@@ -65,7 +65,7 @@
                         &nearr; Live site
                     </a>
                     <a href="#demo" class="font-mono text-sm text-text-secondary underline decoration-text-secondary/30 hover:text-accent hover:decoration-accent transition-colors flex items-center gap-1.5">
-                        &#9889; Admin panel demo (soon)
+                        &#9889; Admin panel demo
                     </a>
                 </div>
             </div>
