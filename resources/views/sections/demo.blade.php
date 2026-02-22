@@ -12,24 +12,10 @@
     </p>
 
     {{-- Demo preview video --}}
-    <div x-data="{ muted: true }" class="relative mb-10 border border-white/6 rounded-lg bg-bg-deep">
-        <video x-ref="video" class="w-full rounded-lg" controls autoplay muted loop playsinline preload="metadata">
+    <div class="mb-10 border border-white/6 rounded-lg bg-bg-deep">
+        <video class="w-full rounded-lg" controls autoplay muted loop playsinline preload="metadata">
             <source src="/videos/demo-preview.mp4" type="video/mp4">
         </video>
-        <button
-            x-show="muted"
-            x-on:click="$refs.video.muted = false; muted = false"
-            x-transition:leave="transition ease-in duration-300"
-            x-transition:leave-start="opacity-100 scale-100"
-            x-transition:leave-end="opacity-0 scale-90"
-            class="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3 px-6 py-3 rounded-xl bg-accent text-bg-deep font-medium text-base cursor-pointer z-10 shadow-lg"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
-            </svg>
-            Tap to unmute
-        </button>
     </div>
 
     {{-- What's inside --}}
