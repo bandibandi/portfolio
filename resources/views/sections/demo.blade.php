@@ -31,7 +31,7 @@
     </div>
 
     {{-- One-click login --}}
-    <a href="https://demo.andrashorvath.dev/admin/demo-login" target="_blank" rel="noopener"
+    <a href="https://demo.andrashorvath.dev/demo-login" target="_blank" rel="noopener"
        class="inline-block px-7 py-3 rounded-lg font-medium text-base bg-accent text-bg-deep hover:bg-accent-light transition-colors mb-6">
         Login as Demo User &rarr;
     </a>
