@@ -11,11 +11,11 @@
         A working system you can click through and inspect.
     </p>
 
-    {{-- GIF preview placeholder --}}
+    {{-- Demo preview video --}}
     <div class="mb-10 border border-white/6 rounded-lg overflow-hidden bg-bg-deep">
-        <div class="aspect-[16/9] flex items-center justify-center text-text-secondary font-mono text-sm">
-            Demo preview GIF will appear here
-        </div>
+        <video class="w-full" autoplay muted loop playsinline preload="metadata">
+            <source src="/videos/demo-preview.mp4" type="video/mp4">
+        </video>
     </div>
 
     {{-- What's inside --}}
