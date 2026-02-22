@@ -13,7 +13,7 @@
 
     {{-- Demo preview video --}}
     <div class="mb-10 border border-white/6 rounded-lg overflow-hidden bg-bg-deep">
-        <video class="w-full" autoplay muted loop playsinline preload="metadata">
+        <video class="w-full rounded-lg" controls autoplay muted loop playsinline preload="metadata">
             <source src="/videos/demo-preview.mp4" type="video/mp4">
         </video>
     </div>
