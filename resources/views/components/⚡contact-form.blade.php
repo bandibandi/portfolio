@@ -60,7 +60,7 @@ new class extends Component
 
         $this->validate();
 
-        Mail::to(config('mail.from.address'))->send(
+        Mail::to(env('MAIL_TO_ADDRESS', config('mail.from.address')))->send(
             new ContactMail($this->name, $this->email, $this->message)
         );
 
