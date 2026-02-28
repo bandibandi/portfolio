@@ -18,18 +18,10 @@
         </video>
     </div>
 
-    {{-- Feature Overview --}}
+    {{-- Feature Overview (demo-relevant) --}}
     <h3 class="font-mono text-xs uppercase tracking-[2px] text-text-secondary mb-8">Feature Overview</h3>
 
     <div class="grid sm:grid-cols-2 gap-4 mb-10 text-left">
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
-            <h4 class="text-text-primary font-semibold mb-2">E-Commerce Core</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Product catalog with attribute-based variant system (size &times; color combinations), dynamic pricing (base + variant addon), and responsive image galleries with 18 conversions per upload.</p>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
-            <h4 class="text-text-primary font-semibold mb-2">Order Management</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Full order lifecycle (received &rarr; approved &rarr; shipped &rarr; delivered), Stripe Checkout integration with HUF currency, Foxpost/GLS/MPL shipping options, and automatic email notifications at every stage.</p>
-        </div>
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Admin Dashboard</h4>
             <p class="text-text-secondary text-sm leading-relaxed">30 analytics widgets across 5 dashboard pages &mdash; revenue trends, order status distribution, geographic heatmaps, inventory monitoring, search analytics, and guest traffic analysis. All queries run on live data without caching shortcuts.</p>
@@ -37,18 +29,6 @@
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Product Architecture</h4>
             <p class="text-text-secondary text-sm leading-relaxed">Attribute-driven variant generation, per-color featured images and galleries, composite pricing, stock tracking per variant, bilingual SEO metadata, and Spatie Media Library with watermarking and 9 responsive sizes in JPG + WebP.</p>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
-            <h4 class="text-text-primary font-semibold mb-2">Coupon Engine</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Fixed and percentage discounts with date-based activation windows, per-customer usage caps, first-order restrictions, and product/category scoping.</p>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
-            <h4 class="text-text-primary font-semibold mb-2">Guest Analytics</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Session-based visitor tracking, landing page analysis, referrer source detection, search query monitoring, and no-result gap identification &mdash; all without third-party analytics.</p>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
-            <h4 class="text-text-primary font-semibold mb-2">Bilingual Support</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Full Hungarian + English content (data model, UI, routing). Domain-based locale switching with user preference override.</p>
         </div>
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Demo Mode</h4>
@@ -73,46 +53,9 @@
         <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Webhook endpoints</strong> &mdash; Stripe route not registered</span></span>
     </div>
 
-    {{-- Technical Showcase --}}
+    {{-- Architecture Highlights --}}
     <h3 class="font-mono text-xs uppercase tracking-[2px] text-text-secondary mb-6">Technical Showcase</h3>
 
-    {{-- By the Numbers --}}
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">30</span>
-            <span class="text-text-secondary text-xs">Dashboard widgets</span>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">8</span>
-            <span class="text-text-secondary text-xs">Filament resources</span>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">24</span>
-            <span class="text-text-secondary text-xs">Livewire components</span>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">14</span>
-            <span class="text-text-secondary text-xs">Eloquent models</span>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">9</span>
-            <span class="text-text-secondary text-xs">Service classes</span>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">9</span>
-            <span class="text-text-secondary text-xs">Authorization policies</span>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">18</span>
-            <span class="text-text-secondary text-xs">Image conversions/upload</span>
-        </div>
-        <div class="bg-bg-deep border border-white/6 rounded-lg p-4">
-            <span class="block text-accent font-mono text-xl font-bold">7</span>
-            <span class="text-text-secondary text-xs">Custom middleware</span>
-        </div>
-    </div>
-
-    {{-- Architecture Highlights --}}
     <div class="grid sm:grid-cols-2 gap-4 mb-10 text-left">
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Query Optimization</h4>

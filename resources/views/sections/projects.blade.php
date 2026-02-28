@@ -48,11 +48,71 @@
                     </div>
                 </div>
 
-                <p class="text-text-secondary text-base leading-relaxed mb-6">
+                <p class="text-text-secondary text-base leading-relaxed mb-8">
                     I run this business myself, so the platform is built around real operations: catalog management, inventory, orders, analytics, and fulfillment.
                     The automated pipeline generates Blender renders, then handles conversion (WebP/JPEG), compression, responsive sizing, and metadata —
                     tuned for Core Web Vitals and SEO.
                 </p>
+
+                {{-- Key Features --}}
+                <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-5">
+                        <h4 class="text-text-primary font-semibold mb-2">E-Commerce Core</h4>
+                        <p class="text-text-secondary text-sm leading-relaxed">Product catalog with attribute-based variant system (size &times; color combinations), dynamic pricing (base + variant addon), and responsive image galleries with 18 conversions per upload.</p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-5">
+                        <h4 class="text-text-primary font-semibold mb-2">Order Management</h4>
+                        <p class="text-text-secondary text-sm leading-relaxed">Full order lifecycle (received &rarr; approved &rarr; shipped &rarr; delivered), Stripe Checkout integration with HUF currency, Foxpost/GLS/MPL shipping options, and automatic email notifications at every stage.</p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-5">
+                        <h4 class="text-text-primary font-semibold mb-2">Coupon Engine</h4>
+                        <p class="text-text-secondary text-sm leading-relaxed">Fixed and percentage discounts with date-based activation windows, per-customer usage caps, first-order restrictions, and product/category scoping.</p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-5">
+                        <h4 class="text-text-primary font-semibold mb-2">Guest Analytics</h4>
+                        <p class="text-text-secondary text-sm leading-relaxed">Session-based visitor tracking, landing page analysis, referrer source detection, search query monitoring, and no-result gap identification &mdash; all without third-party analytics.</p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-5">
+                        <h4 class="text-text-primary font-semibold mb-2">Bilingual Support</h4>
+                        <p class="text-text-secondary text-sm leading-relaxed">Full Hungarian + English content (data model, UI, routing). Domain-based locale switching with user preference override.</p>
+                    </div>
+                </div>
+
+                {{-- By the Numbers --}}
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">30</span>
+                        <span class="text-text-secondary text-xs">Dashboard widgets</span>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">8</span>
+                        <span class="text-text-secondary text-xs">Filament resources</span>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">24</span>
+                        <span class="text-text-secondary text-xs">Livewire components</span>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">14</span>
+                        <span class="text-text-secondary text-xs">Eloquent models</span>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">9</span>
+                        <span class="text-text-secondary text-xs">Service classes</span>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">9</span>
+                        <span class="text-text-secondary text-xs">Authorization policies</span>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">18</span>
+                        <span class="text-text-secondary text-xs">Image conversions/upload</span>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <span class="block text-accent font-mono text-xl font-bold">7</span>
+                        <span class="text-text-secondary text-xs">Custom middleware</span>
+                    </div>
+                </div>
 
                 <div class="flex flex-wrap gap-2 mb-6">
                     @foreach (['Laravel', 'FilamentPHP', 'Livewire', 'Tailwind CSS', 'Alpine.js', 'MySQL', 'Python', 'Blender API'] as $tag)
