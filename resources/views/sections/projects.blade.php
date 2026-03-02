@@ -83,35 +83,35 @@
                 {{-- By the Numbers --}}
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">30</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">30</span>
                         <span class="text-text-secondary text-xs">Dashboard widgets</span>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">8</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">8</span>
                         <span class="text-text-secondary text-xs">Filament resources</span>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">24</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">24</span>
                         <span class="text-text-secondary text-xs">Livewire components</span>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">14</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">14</span>
                         <span class="text-text-secondary text-xs">Eloquent models</span>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">9</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">9</span>
                         <span class="text-text-secondary text-xs">Service classes</span>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">9</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">9</span>
                         <span class="text-text-secondary text-xs">Authorization policies</span>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">18</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">18</span>
                         <span class="text-text-secondary text-xs">Image conversions/upload</span>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
-                        <span class="block text-accent font-mono text-xl font-bold">7</span>
+                        <span class="block text-accent font-mono text-3xl font-bold">7</span>
                         <span class="text-text-secondary text-xs">Custom middleware</span>
                     </div>
                 </div>

@@ -67,6 +67,9 @@
         Skip to content
     </a>
 
+    {{-- Scan line --}}
+    <div class="scanline" aria-hidden="true"></div>
+
     {{-- Navigation --}}
     <x-nav />
 

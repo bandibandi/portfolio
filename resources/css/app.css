@@ -117,6 +117,26 @@ html {
     animation: blink 1s step-end infinite;
 }
 
+/* Scan line — horizontal glow that drifts down the page once */
+@keyframes scanline {
+    0% { top: 0; opacity: 0; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+}
+.scanline {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    z-index: 60;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(122, 162, 247, 0.4), rgba(122, 162, 247, 0.7), rgba(122, 162, 247, 0.4), transparent);
+    box-shadow: 0 0 15px 2px rgba(122, 162, 247, 0.3);
+    animation: scanline 8s ease-in-out forwards;
+}
+
 /* Tech stack icon hover glow */
 .stack-icon {
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -139,6 +159,9 @@ html {
     .stack-icon:hover {
         transform: none;
         filter: none;
+    }
+    .scanline {
+        display: none;
     }
     * {
         transition-duration: 0.01ms !important;
