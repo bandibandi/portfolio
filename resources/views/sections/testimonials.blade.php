@@ -15,6 +15,7 @@
                 'title' => 'Co-founder',
                 'company' => 'AP Cash Kft.',
                 'project' => 'Online cash register reseller platform',
+                'context' => 'Became the leading cash register reseller in Hungary with an automated platform handling communication, scheduling, and regulatory compliance, exceeding even their own goal of doubling the customer base.',
                 'color' => 'accent-green',
             ],
             [
@@ -23,6 +24,7 @@
                 'title' => 'CEO',
                 'company' => 'MediLine Uzlethaz Kft.',
                 'project' => 'Loyalty & coupon terminal system',
+                'context' => null,
                 'color' => 'accent-purple',
             ],
             [
@@ -31,15 +33,22 @@
                 'title' => 'Managing Director',
                 'company' => 'EPDS Ltd.',
                 'project' => 'Hazardous area compliance software',
+                'context' => null,
                 'color' => 'accent',
             ],
         ] as $testimonial)
             <article class="reveal bg-bg-card border border-white/6 rounded-xl p-8 flex flex-col hover:border-{{ $testimonial['color'] }}/20 transition-all duration-300">
                 <p class="font-mono text-xs text-{{ $testimonial['color'] }} uppercase tracking-[1.5px] mb-4">{{ $testimonial['project'] }}</p>
 
-                <blockquote class="text-text-secondary text-base leading-relaxed mb-8 flex-1">
+                <blockquote class="text-text-secondary text-base leading-relaxed mb-4 flex-1">
                     &ldquo;{{ $testimonial['quote'] }}&rdquo;
                 </blockquote>
+
+                @if ($testimonial['context'])
+                    <p class="text-sm text-text-secondary/70 mb-8 italic">{{ $testimonial['context'] }}</p>
+                @else
+                    <div class="mb-8"></div>
+                @endif
 
                 <footer>
                     <p class="text-text-primary font-semibold">{{ $testimonial['name'] }}</p>
