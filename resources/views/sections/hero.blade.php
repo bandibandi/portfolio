@@ -14,15 +14,11 @@
         </p>
 
         <h1 class="text-balance text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">
-            I build
+            I build the
             <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">
-                admin panels
+                systems
             </span>
-            &amp;
-            <span class="bg-gradient-to-br from-accent to-accent-green bg-clip-text text-transparent">
-                web apps
-            </span>
-            that run real businesses.
+            that real businesses run on.
         </h1>
 
         <p class="text-lg text-text-secondary max-w-4xl leading-relaxed mb-10">
