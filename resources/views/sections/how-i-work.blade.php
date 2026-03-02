@@ -154,7 +154,7 @@
             </div>
 
             <div class="flex flex-col md:flex-row gap-8">
-                <div>
+                <div class="flex-1 min-w-0">
                     <p class="text-text-secondary leading-relaxed mb-4">
                         A system that works is not the same as a system you can rely on.
                     </p>
@@ -185,7 +185,7 @@
             </div>
 
             <div class="flex flex-col md:flex-row gap-8">
-                <div>
+                <div class="flex-1 min-w-0">
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Built to remain understandable months or years later.
                     </p>
