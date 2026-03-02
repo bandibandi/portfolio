@@ -26,38 +26,42 @@
                 <h3 class="text-lg font-semibold">Strategic Understanding</h3>
             </div>
 
-            <p class="text-text-secondary leading-relaxed mb-4">
-                Before defining features, I clarify the objective.
-            </p>
+            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+                <div>
+                    <p class="text-text-secondary leading-relaxed mb-4">
+                        Clarify the objective.
+                    </p>
 
-            <ul class="space-y-2 text-text-secondary text-base mb-6">
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    What business outcome is expected?
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    Who interacts with the system?
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    What constraints exist?
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    Where can complexity appear later?
-                </li>
-            </ul>
+                    <ul class="space-y-2 text-text-secondary text-base mb-4">
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            What business outcome is expected?
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            Who interacts with the system?
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            What constraints exist?
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            Where can complexity appear later?
+                        </li>
+                    </ul>
 
-            <p class="text-text-secondary text-sm leading-relaxed mb-4">
-                Well-defined boundaries early prevent architectural debt.
-            </p>
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        Well-defined boundaries early prevent architectural debt.
+                    </p>
+                </div>
 
-            <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4">
-                <p class="text-sm text-text-secondary leading-relaxed">
-                    <span class="font-semibold text-text-primary">Your role:</span>
-                    Gather input from the people who will use the system daily. The more real-world context you bring to the table, the fewer surprises we'll face later.
-                </p>
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                    <p class="text-sm text-text-secondary leading-relaxed">
+                        <span class="font-semibold text-text-primary">Your role:</span>
+                        Gather input from the people who will use the system daily. The more real-world context you bring to the table, the fewer surprises we'll face later.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -68,42 +72,46 @@
                 <h3 class="text-lg font-semibold">System Architecture</h3>
             </div>
 
-            <p class="text-text-secondary leading-relaxed mb-4">
-                I design the core before building the surface.
-            </p>
+            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+                <div>
+                    <p class="text-text-secondary leading-relaxed mb-4">
+                        Design the core.
+                    </p>
 
-            <ul class="space-y-2 text-text-secondary text-base mb-6">
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    Data structures and relationships
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    Domain boundaries
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    User roles and permissions
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    Validation logic
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                    Long-term scalability considerations
-                </li>
-            </ul>
+                    <ul class="space-y-2 text-text-secondary text-base mb-4">
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            Data structures and relationships
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            Domain boundaries
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            User roles and permissions
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            Validation logic
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
+                            Long-term scalability considerations
+                        </li>
+                    </ul>
 
-            <p class="text-text-secondary text-sm leading-relaxed mb-4">
-                A clear architecture makes development predictable and maintainable.
-            </p>
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        A clear architecture makes development predictable and maintainable.
+                    </p>
+                </div>
 
-            <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4">
-                <p class="text-sm text-text-secondary leading-relaxed">
-                    <span class="font-semibold text-text-primary">Your role:</span>
-                    Review the proposed structure and challenge anything that doesn't match your reality. Adjustments here are fast, simple, and part of the process.
-                </p>
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                    <p class="text-sm text-text-secondary leading-relaxed">
+                        <span class="font-semibold text-text-primary">Your role:</span>
+                        Review the proposed structure and challenge anything that doesn't match your reality. Adjustments here are fast, simple, and part of the process.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -114,23 +122,27 @@
                 <h3 class="text-lg font-semibold">Controlled Execution</h3>
             </div>
 
-            <p class="text-text-secondary leading-relaxed mb-4">
-                Development follows structure, not urgency.
-            </p>
+            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+                <div>
+                    <p class="text-text-secondary leading-relaxed mb-4">
+                        Development follows structure.
+                    </p>
 
-            <p class="text-text-secondary text-base leading-relaxed mb-4">
-                I deliver in focused iterations. Each round produces working functionality you can test against your actual workflow. Validation rules, authorization policies, and data integrity constraints are built in from the start.
-            </p>
+                    <p class="text-text-secondary text-base leading-relaxed mb-4">
+                        I deliver in focused iterations. Each round produces working functionality you can test against your actual workflow. Validation rules, authorization policies, and data integrity constraints are built in from the start.
+                    </p>
 
-            <p class="text-text-secondary text-sm leading-relaxed mb-4">
-                Early feedback keeps the cost of change low. That's the entire point of iterative delivery.
-            </p>
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        Early feedback keeps the cost of change low. That's the entire point of iterative delivery.
+                    </p>
+                </div>
 
-            <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4">
-                <p class="text-sm text-text-secondary leading-relaxed">
-                    <span class="font-semibold text-text-primary">Your role:</span>
-                    Test each delivery. Try to break it. If something feels off, say so. Changes are still possible and affordable, but they may carry scope and timeline implications.
-                </p>
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                    <p class="text-sm text-text-secondary leading-relaxed">
+                        <span class="font-semibold text-text-primary">Your role:</span>
+                        Test each delivery. Try to break it. If something feels off, say so. Changes are still possible and affordable, but they may carry scope and timeline implications.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -141,23 +153,27 @@
                 <h3 class="text-lg font-semibold">Quality Assurance & Hardening</h3>
             </div>
 
-            <p class="text-text-secondary leading-relaxed mb-4">
-                A system that works is not the same as a system you can rely on.
-            </p>
+            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+                <div>
+                    <p class="text-text-secondary leading-relaxed mb-4">
+                        A system that works is not the same as a system you can rely on.
+                    </p>
 
-            <p class="text-text-secondary text-base leading-relaxed mb-4">
-                Before anything goes live, I stress-test the full workflow &mdash; boundary testing, role-based access verification, data integrity under load, and edge cases that users will find even if you don't.
-            </p>
+                    <p class="text-text-secondary text-base leading-relaxed mb-4">
+                        Before anything goes live, I stress-test the full workflow &mdash; boundary testing, role-based access verification, data integrity under load, and edge cases that users will find even if you don't.
+                    </p>
 
-            <p class="text-text-secondary text-base leading-relaxed mb-4">
-                I spent over two decades in software quality assurance. I don't test because the process says so. I test because I know what breaks in production when you don't.
-            </p>
+                    <p class="text-text-secondary text-base leading-relaxed">
+                        I spent over two decades in software quality assurance. I don't test because the process says so. I test because I know what breaks in production when you don't.
+                    </p>
+                </div>
 
-            <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4">
-                <p class="text-sm text-text-secondary leading-relaxed">
-                    <span class="font-semibold text-text-primary">Your role:</span>
-                    Let your team run through their actual tasks. The most valuable feedback comes from real usage.
-                </p>
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                    <p class="text-sm text-text-secondary leading-relaxed">
+                        <span class="font-semibold text-text-primary">Your role:</span>
+                        Let your team run through their actual tasks. The most valuable feedback comes from real usage.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -168,23 +184,27 @@
                 <h3 class="text-lg font-semibold">Sustainable Delivery</h3>
             </div>
 
-            <p class="text-text-secondary leading-relaxed mb-4">
-                A system should remain understandable months or years later.
-            </p>
+            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+                <div>
+                    <p class="text-text-secondary leading-relaxed mb-4">
+                        Built to remain understandable months or years later.
+                    </p>
 
-            <p class="text-text-secondary text-base leading-relaxed mb-4">
-                Clean, maintainable code. Logical structure that speaks for itself. Documentation where it matters. A foundation that allows growth without rewrite.
-            </p>
+                    <p class="text-text-secondary text-base leading-relaxed mb-4">
+                        Clean, maintainable code. Logical structure that speaks for itself. Documentation where it matters. A foundation that allows growth without rewrite.
+                    </p>
 
-            <p class="text-text-secondary text-sm leading-relaxed mb-4">
-                I build systems meant to last, not to be replaced.
-            </p>
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        I build systems meant to last, not to be replaced.
+                    </p>
+                </div>
 
-            <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4">
-                <p class="text-sm text-text-secondary leading-relaxed">
-                    <span class="font-semibold text-text-primary">Your role:</span>
-                    Designate someone who owns the system after handoff. I'll make sure they understand the architecture and key decisions. A well-built system still needs someone who cares about it.
-                </p>
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                    <p class="text-sm text-text-secondary leading-relaxed">
+                        <span class="font-semibold text-text-primary">Your role:</span>
+                        Designate someone who owns the system after handoff. I'll make sure they understand the architecture and key decisions. A well-built system still needs someone who cares about it.
+                    </p>
+                </div>
             </div>
         </div>
 
