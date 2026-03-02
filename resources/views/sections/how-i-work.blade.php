@@ -9,7 +9,7 @@
         <span class="w-0.5 bg-accent/60 rounded-full self-stretch"></span>
         <div>
             <p class="text-text-secondary mb-2">
-                I approach every project as a system &mdash; most projects move through the same five phases.
+                I approach every project as a system. Most projects move through the same five phases.
             </p>
             <p class="text-text-secondary/80 text-base">
                 Technology is a tool. Structure is the foundation.
@@ -33,7 +33,7 @@
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
-                        I start by understanding what the system needs to do in the real world &mdash; not just on paper. The goal is to align on scope, priorities, and potential risks before a single line of code is written.
+                        I start by understanding what the system actually needs to do. Scope, priorities, and potential risks get defined before any code is written.
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
@@ -68,11 +68,11 @@
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
-                        Before writing any code, I map out how data flows through the system. This blueprint defines what gets built &mdash; and more importantly, what doesn't. Every decision here saves hours of rework down the line.
+                        Before writing any code, I map out how data flows through the system. Every structural decision made here saves hours of rework later.
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
-                        Data structures, domain boundaries, user roles, validation logic, and long-term scalability &mdash; all defined upfront. The architecture becomes the contract between what's possible and what's practical.
+                        Data structures, domain boundaries, user roles, validation logic, scalability. All defined upfront so the architecture holds up as the project grows.
                     </p>
 
                     <p class="text-text-secondary text-sm leading-relaxed">
@@ -134,7 +134,7 @@
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
-                        Before anything goes live, I stress-test the full workflow &mdash; boundary testing, role-based access verification, data integrity under load, and edge cases that users will find even if you don't.
+                        Before anything goes live, I stress-test the full workflow. Boundary conditions, role-based access, data integrity under load, and edge cases that users will find even if you don't.
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed">
@@ -169,7 +169,7 @@
                     </p>
 
                     <p class="text-text-secondary text-sm leading-relaxed">
-                        I build systems meant to last, not to be replaced.
+                        I build systems meant to last.
                     </p>
                 </div>
 
