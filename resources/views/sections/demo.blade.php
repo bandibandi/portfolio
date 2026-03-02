@@ -24,7 +24,7 @@
     <div class="grid sm:grid-cols-2 gap-4 mb-10 text-left">
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Admin Dashboard</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">30 analytics widgets across 5 dashboard pages &mdash; revenue trends, order status distribution, geographic heatmaps, inventory monitoring, search analytics, and guest traffic analysis. All queries run on live data without caching shortcuts.</p>
+            <p class="text-text-secondary text-sm leading-relaxed">30 analytics widgets across 5 dashboard pages: revenue trends, order status distribution, geographic heatmaps, inventory monitoring, search analytics, and guest traffic analysis. All queries run on live data without caching shortcuts.</p>
         </div>
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Product Architecture</h4>
@@ -32,7 +32,7 @@
         </div>
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Demo Mode</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Same production codebase &mdash; demo behavior is config-driven. Cloudflare Turnstile auto-login, policy-level write protection, automated data resets, payment blocking, and SEO exclusion. 55+ safeguard checks across the stack.</p>
+            <p class="text-text-secondary text-sm leading-relaxed">Same production codebase, demo behavior is config-driven. Cloudflare Turnstile auto-login, policy-level write protection, automated data resets, payment blocking, and SEO exclusion. 55+ safeguard checks across the stack.</p>
         </div>
     </div>
 
@@ -41,16 +41,16 @@
     <p class="text-text-secondary text-sm mb-6 max-w-175 mx-auto">The demo runs the same codebase as production. The following features are active in production but disabled in the demo environment via configuration:</p>
 
     <div class="grid sm:grid-cols-2 gap-x-10 gap-y-2 mb-10 text-text-secondary text-sm text-left max-w-175 mx-auto">
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Stripe payments</strong> &mdash; checkout flow blocked at service layer</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Checkout page</strong> &mdash; entire checkout component disabled</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Email notifications</strong> &mdash; redirected to log driver</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">File uploads</strong> &mdash; disabled across all forms</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Record deletion</strong> &mdash; blocked at policy level via shared trait</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Storefront writes</strong> &mdash; POST/PUT/DELETE blocked on public routes</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Settings modification</strong> &mdash; returns warning instead</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">AI description generator</strong> &mdash; buttons disabled</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">SEO indexing</strong> &mdash; robots meta prevents crawling</span></span>
-        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Webhook endpoints</strong> &mdash; Stripe route not registered</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Stripe payments</strong>, checkout flow blocked at service layer</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Checkout page</strong>, entire checkout component disabled</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Email notifications</strong>, redirected to log driver</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">File uploads</strong>, disabled across all forms</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Record deletion</strong>, blocked at policy level via shared trait</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Storefront writes</strong>, POST/PUT/DELETE blocked on public routes</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Settings modification</strong>, returns warning instead</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">AI description generator</strong>, buttons disabled</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">SEO indexing</strong>, robots meta prevents crawling</span></span>
+        <span class="flex items-start gap-2"><span class="text-accent-red mt-0.5">&#10005;</span> <span><strong class="text-text-primary">Webhook endpoints</strong>, Stripe route not registered</span></span>
     </div>
 
     {{-- Architecture Highlights --}}
@@ -59,7 +59,7 @@
     <div class="grid sm:grid-cols-2 gap-4 mb-10 text-left">
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Query Optimization</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Aggregated queries using GROUP BY with conditional aggregation (SUM/COUNT CASE WHEN), composite indexes, eager loading &mdash; zero N+1 problems under 90K+ orders.</p>
+            <p class="text-text-secondary text-sm leading-relaxed">Aggregated queries using GROUP BY with conditional aggregation (SUM/COUNT CASE WHEN), composite indexes, eager loading, zero N+1 problems under 90K+ orders.</p>
         </div>
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Hybrid Cart System</h4>
@@ -71,7 +71,7 @@
         </div>
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Dual Image Pipeline</h4>
-            <p class="text-text-secondary text-sm leading-relaxed">Iteratively developed from manual GUI workflow through bash automation to the current Python pipeline. Production images processed with pyvips (Lanczos3 resampling), PNG watermark compositing, and exiftool for IPTC/XMP metadata &mdash; 7 sizes &times; 2 formats per source. GD-based on-upload conversions serve as dev fallback.</p>
+            <p class="text-text-secondary text-sm leading-relaxed">Iteratively developed from manual GUI workflow through bash automation to the current Python pipeline. Production images processed with pyvips (Lanczos3 resampling), PNG watermark compositing, and exiftool for IPTC/XMP metadata, 7 sizes &times; 2 formats per source. GD-based on-upload conversions serve as dev fallback.</p>
         </div>
         <div class="bg-bg-deep border border-white/6 rounded-lg p-5">
             <h4 class="text-text-primary font-semibold mb-2">Payment Integration</h4>

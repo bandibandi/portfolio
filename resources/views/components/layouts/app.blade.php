@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow">
 
     {{-- Open Graph --}}
-    <meta property="og:title" content="{{ $title ?? 'andrashorvath.dev — Full-Stack Laravel Developer' }}">
+    <meta property="og:title" content="{{ $title ?? 'andrashorvath.dev | Full-Stack Laravel Developer' }}">
     <meta property="og:description" content="I design and build custom admin systems, internal tools, and automation platforms for businesses that outgrow spreadsheets.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
@@ -18,14 +18,14 @@
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ $title ?? 'andrashorvath.dev — Full-Stack Laravel Developer' }}">
+    <meta name="twitter:title" content="{{ $title ?? 'andrashorvath.dev | Full-Stack Laravel Developer' }}">
     <meta name="twitter:description" content="I design and build custom admin systems, internal tools, and automation platforms for businesses that outgrow spreadsheets.">
     <meta name="twitter:image" content="{{ asset('images/og-image.jpg') }}">
 
     {{-- Canonical --}}
     <link rel="canonical" href="{{ url('/') }}">
 
-    <title>{{ $title ?? 'andrashorvath.dev — Full-Stack Laravel Developer' }}</title>
+    <title>{{ $title ?? 'andrashorvath.dev | Full-Stack Laravel Developer' }}</title>
 
     {{-- Favicon --}}
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
@@ -40,7 +40,7 @@
     <script type="application/ld+json">{!! json_encode([
         '@context' => 'https://schema.org',
         '@type' => 'ProfessionalService',
-        'name' => 'Andras Horvath — Full-Stack Laravel Developer',
+        'name' => 'Andras Horvath | Full-Stack Laravel Developer',
         'url' => url('/'),
         'logo' => asset('favicon.svg'),
         'description' => 'I design and build custom admin systems, internal tools, and automation platforms for businesses that outgrow spreadsheets.',
@@ -81,7 +81,7 @@
     {{-- Footer --}}
     <footer class="border-t border-border py-8 text-center font-mono text-[0.8rem] text-text-secondary" role="contentinfo">
         <div class="max-w-275 mx-auto px-4 sm:px-8">
-            <p>&copy; {{ date('Y') }} Andras Horvath &mdash; Built with Laravel, Tailwind CSS &amp; &#9749;</p>
+            <p>&copy; {{ date('Y') }} Andras Horvath | Built with Laravel, Tailwind CSS &amp; &#9749;</p>
             <p class="text-text-secondary text-[0.75rem] mt-2">
                 Hungary &middot; CET (UTC+1) &middot; Available for remote work worldwide
             </p>

@@ -24,7 +24,7 @@
         {{-- Bio --}}
         <p class="text-lg text-text-secondary leading-relaxed mb-6">
             I’ve been working in IT for over 25 years, progressing from system administration to full-stack development.
-            Early in my career I managed enterprise infrastructure &mdash; server configuration, Linux administration, networking, Docker, and deployment automation across multiple sites &mdash; where stability, documentation, and operational discipline were essential.
+            Early in my career I managed enterprise infrastructure: server configuration, Linux administration, networking, Docker, and deployment automation across multiple sites, where stability, documentation, and operational discipline were essential.
         </p>
 
         <p class="text-lg text-text-secondary leading-relaxed mb-6">
@@ -44,7 +44,7 @@
 
         <p class="text-lg text-text-secondary leading-relaxed mb-8">
             Running my own e-commerce business adds another layer: I build and operate the same kind of systems I deliver to clients.
-            Every automation, pipeline, and dashboard I create is grounded in real business constraints —
+            Every automation, pipeline, and dashboard I create is grounded in real business constraints:
             time, cost, and repeatability.
         </p>
 

@@ -15,7 +15,7 @@
         </p>
 
         <p class="text-text-secondary/80 text-base">
-            Built fast and secure, with privacy in mind — backed by Cloudflare edge protection and practical analytics.
+            Built fast and secure, with privacy in mind, backed by Cloudflare edge protection and practical analytics.
         </p>
     </div>
 </div>
@@ -28,7 +28,7 @@
             ],
             [
                 'title' => 'Internal Business Tools',
-                'description' => 'Custom CRM, logistics, and operations software built around how your company really works — backed by 15+ years of enterprise systems experience.',
+                'description' => 'Custom CRM, logistics, and operations software built around how your company really works, backed by 15+ years of enterprise systems experience.',
             ],
             [
                 'title' => 'E-Commerce Infrastructure',
@@ -40,7 +40,7 @@
             ],
             [
                 'title' => 'Legacy System Upgrades',
-                'description' => 'Modernizing aging PHP systems (CodeIgniter, Yii, vanilla PHP) into maintainable Laravel architecture — with hands-on migration experience across enterprise codebases.',
+                'description' => 'Modernizing aging PHP systems (CodeIgniter, Yii, vanilla PHP) into maintainable Laravel architecture, with hands-on migration experience across enterprise codebases.',
             ],
             [
                 'title' => 'Automation Pipelines',

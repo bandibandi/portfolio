@@ -25,7 +25,7 @@
 
             <div class="p-8">
                 <p class="font-mono text-xs text-accent-green uppercase tracking-[1.5px] mb-2">E-Commerce Platform</p>
-                <h3 class="text-[1.4rem] font-semibold tracking-tight mb-4">NordWoodArt &mdash; Artisan Wooden Wall Art</h3>
+                <h3 class="text-[1.4rem] font-semibold tracking-tight mb-4">NordWoodArt, Artisan Wooden Wall Art</h3>
 
                 {{-- Case snapshot --}}
                 <div class="grid md:grid-cols-3 gap-5 mb-7">
@@ -52,7 +52,7 @@
 
                 <p class="text-text-secondary text-base leading-relaxed mb-8">
                     I run this business myself, so the platform is built around real operations: catalog management, inventory, orders, analytics, and fulfillment.
-                    The automated pipeline generates Blender renders, then handles conversion (WebP/JPEG), compression, responsive sizing, and metadata —
+                    The automated pipeline generates Blender renders, then handles conversion (WebP/JPEG), compression, responsive sizing, and metadata,
                     tuned for Core Web Vitals and SEO.
                 </p>
 
@@ -72,7 +72,7 @@
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-5">
                         <h4 class="text-text-primary font-semibold mb-2">Guest Analytics</h4>
-                        <p class="text-text-secondary text-sm leading-relaxed">Session-based visitor tracking, landing page analysis, referrer source detection, search query monitoring, and no-result gap identification &mdash; all without third-party analytics.</p>
+                        <p class="text-text-secondary text-sm leading-relaxed">Session-based visitor tracking, landing page analysis, referrer source detection, search query monitoring, and no-result gap identification, all without third-party analytics.</p>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-5">
                         <h4 class="text-text-primary font-semibold mb-2">Bilingual Support</h4>
@@ -149,7 +149,7 @@
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
                         <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">My role</p>
                         <p class="text-sm text-text-secondary leading-relaxed">
-                            Senior Software Developer &mdash; developing and testing a large-scale government information system since 2017.
+                            Senior Software Developer, developing and testing a large-scale government information system since 2017.
                         </p>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
@@ -195,7 +195,7 @@
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
                         <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">Result</p>
                         <p class="text-sm text-text-secondary leading-relaxed">
-                            <strong class="text-text-primary font-semibold">24 locations nationwide</strong> &mdash; personalized promotions, store-specific rewards, and anonymous card distribution on first use.
+                            <strong class="text-text-primary font-semibold">24 locations nationwide</strong> with personalized promotions, store-specific rewards, and anonymous card distribution on first use.
                         </p>
                     </div>
                 </div>
