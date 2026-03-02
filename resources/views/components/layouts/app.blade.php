@@ -110,13 +110,13 @@
                 if (!entries[0].isIntersecting) return;
                 obs.disconnect();
                 let current = 0;
-                const step = () => {
+                const tick = () => {
                     current++;
                     el.textContent = String(current).padStart(2, '0');
-                    if (current < target) requestAnimationFrame(step);
+                    if (current < target) setTimeout(tick, 180);
                 };
-                requestAnimationFrame(step);
-            }, { threshold: 0.5 });
+                setTimeout(tick, 400);
+            }, { threshold: 0.3 });
             obs.observe(el);
         });
     })();
