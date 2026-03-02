@@ -26,8 +26,8 @@
                 <h3 class="text-lg font-semibold">Strategic Understanding</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
-                <div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1 min-w-0">
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Clarify the objective.
                     </p>
@@ -56,7 +56,7 @@
                     </p>
                 </div>
 
-                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start md:w-80 md:shrink-0">
                     <p class="text-sm text-text-secondary leading-relaxed">
                         <span class="font-semibold text-text-primary">Your role:</span>
                         Gather input from the people who will use the system daily. The more real-world context you bring to the table, the fewer surprises we'll face later.
@@ -72,8 +72,8 @@
                 <h3 class="text-lg font-semibold">System Architecture</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
-                <div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1 min-w-0">
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Design the core.
                     </p>
@@ -106,7 +106,7 @@
                     </p>
                 </div>
 
-                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start md:w-80 md:shrink-0">
                     <p class="text-sm text-text-secondary leading-relaxed">
                         <span class="font-semibold text-text-primary">Your role:</span>
                         Review the proposed structure and challenge anything that doesn't match your reality. Adjustments here are fast, simple, and part of the process.
@@ -122,8 +122,8 @@
                 <h3 class="text-lg font-semibold">Controlled Execution</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
-                <div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="flex-1 min-w-0">
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Development follows structure.
                     </p>
@@ -137,7 +137,7 @@
                     </p>
                 </div>
 
-                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start md:w-80 md:shrink-0">
                     <p class="text-sm text-text-secondary leading-relaxed">
                         <span class="font-semibold text-text-primary">Your role:</span>
                         Test each delivery. Try to break it. If something feels off, say so. Changes are still possible and affordable, but they may carry scope and timeline implications.
@@ -153,7 +153,7 @@
                 <h3 class="text-lg font-semibold">Quality Assurance & Hardening</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
+            <div class="flex flex-col md:flex-row gap-8">
                 <div>
                     <p class="text-text-secondary leading-relaxed mb-4">
                         A system that works is not the same as a system you can rely on.
@@ -168,7 +168,7 @@
                     </p>
                 </div>
 
-                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start md:w-80 md:shrink-0">
                     <p class="text-sm text-text-secondary leading-relaxed">
                         <span class="font-semibold text-text-primary">Your role:</span>
                         Let your team run through their actual tasks. The most valuable feedback comes from real usage.
@@ -184,7 +184,7 @@
                 <h3 class="text-lg font-semibold">Sustainable Delivery</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
+            <div class="flex flex-col md:flex-row gap-8">
                 <div>
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Built to remain understandable months or years later.
@@ -199,7 +199,7 @@
                     </p>
                 </div>
 
-                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start">
+                <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start md:w-80 md:shrink-0">
                     <p class="text-sm text-text-secondary leading-relaxed">
                         <span class="font-semibold text-text-primary">Your role:</span>
                         Designate someone who owns the system after handoff. I'll make sure they understand the architecture and key decisions. A well-built system still needs someone who cares about it.
