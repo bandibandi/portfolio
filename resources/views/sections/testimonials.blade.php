@@ -9,50 +9,50 @@
 
     <div class="grid md:grid-cols-2 gap-6">
         {{-- Featured testimonial --}}
-        <article class="reveal md:col-span-2 bg-bg-card border border-white/6 rounded-xl p-8 md:p-10 flex flex-col hover:border-accent-green/20 transition-all duration-300">
+        <article class="reveal bg-bg-card border border-white/6 rounded-xl p-8 md:p-10 flex flex-col hover:border-accent-green/20 transition-all duration-300">
             <p class="font-mono text-xs text-accent-green uppercase tracking-[1.5px] mb-4">Online cash register reseller platform</p>
 
-            <blockquote class="text-text-secondary text-lg leading-relaxed mb-8 max-w-3xl">
+            <blockquote class="text-text-secondary text-lg leading-relaxed mb-8">
                 &ldquo;Andras built us a backend system that lets me see any analytics about our customers within a minute. Since then, I can focus on strategic management tasks, because the website works 24 hours a day, on its own, producing new customers. We became the leading cash register reseller in Hungary with an automated platform handling communication, scheduling, and regulatory compliance, exceeding even our own goal of doubling the customer base.&rdquo;
             </blockquote>
 
-            <footer>
+            <footer class="mt-auto">
                 <p class="text-text-primary font-semibold">Co-founder</p>
                 <p class="text-text-secondary text-sm">AP Cash Ltd.</p>
             </footer>
         </article>
 
         {{-- Other testimonials --}}
-        @foreach ([
-            [
-                'quote' => 'The software Andras developed handles a high volume of customers and transactions reliably and transparently. He always focused on making the system as easy to use as possible, training new users was effortless.',
-                'title' => 'CEO',
-                'company' => 'MediLine Uzlethaz Ltd.',
-                'project' => 'Loyalty & coupon terminal system',
-                'color' => 'accent-purple',
-            ],
-            [
-                'quote' => 'I would recommend Andras anytime as a backend developer. His job was penetration testing and developing new functions for our industrial safety compliance system.',
-                'title' => 'Managing Director',
-                'company' => 'EPDS Ltd.',
-                'project' => 'Hazardous area compliance software',
-                'color' => 'accent',
-            ],
-        ] as $testimonial)
-            <article class="reveal bg-bg-card border border-white/6 rounded-xl p-8 flex flex-col hover:border-{{ $testimonial['color'] }}/20 transition-all duration-300">
-                <p class="font-mono text-xs text-{{ $testimonial['color'] }} uppercase tracking-[1.5px] mb-4">{{ $testimonial['project'] }}</p>
+        <div class="flex flex-col gap-6">
+            @foreach ([
+                [
+                    'quote' => 'The software Andras developed handles a high volume of customers and transactions reliably and transparently. He always focused on making the system as easy to use as possible, training new users was effortless.',
+                    'title' => 'CEO',
+                    'company' => 'MediLine Uzlethaz Ltd.',
+                    'project' => 'Loyalty & coupon terminal system',
+                    'color' => 'accent-purple',
+                ],
+                [
+                    'quote' => 'I would recommend Andras anytime as a backend developer. His job was penetration testing and developing new functions for our industrial safety compliance system.',
+                    'title' => 'Managing Director',
+                    'company' => 'EPDS Ltd.',
+                    'project' => 'Hazardous area compliance software',
+                    'color' => 'accent',
+                ],
+            ] as $testimonial)
+                <article class="reveal bg-bg-card border border-white/6 rounded-xl p-8 flex flex-col flex-1 hover:border-{{ $testimonial['color'] }}/20 transition-all duration-300">
+                    <p class="font-mono text-xs text-{{ $testimonial['color'] }} uppercase tracking-[1.5px] mb-4">{{ $testimonial['project'] }}</p>
 
-                <blockquote class="text-text-secondary text-base leading-relaxed mb-4 flex-1">
-                    &ldquo;{{ $testimonial['quote'] }}&rdquo;
-                </blockquote>
+                    <blockquote class="text-text-secondary text-base leading-relaxed mb-6 flex-1">
+                        &ldquo;{{ $testimonial['quote'] }}&rdquo;
+                    </blockquote>
 
-                <div class="mb-8"></div>
-
-                <footer>
-                    <p class="text-text-primary font-semibold">{{ $testimonial['title'] }}</p>
-                    <p class="text-text-secondary text-sm">{{ $testimonial['company'] }}</p>
-                </footer>
-            </article>
-        @endforeach
+                    <footer>
+                        <p class="text-text-primary font-semibold">{{ $testimonial['title'] }}</p>
+                        <p class="text-text-secondary text-sm">{{ $testimonial['company'] }}</p>
+                    </footer>
+                </article>
+            @endforeach
+        </div>
     </div>
 </section>
