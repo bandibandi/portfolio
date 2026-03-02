@@ -12,9 +12,11 @@
         <article class="reveal bg-bg-card border border-white/6 rounded-xl p-8 md:p-10 flex flex-col hover:border-accent-green/20 transition-all duration-300">
             <p class="font-mono text-xs text-accent-green uppercase tracking-[1.5px] mb-4">Online cash register reseller platform</p>
 
-            <blockquote class="text-text-secondary text-lg leading-relaxed mb-8">
+            <blockquote class="text-text-secondary text-lg leading-relaxed mb-4">
                 &ldquo;Andras built us a backend system that lets me see any analytics about our customers within a minute. Since then, I can focus on strategic management tasks, because the website works 24 hours a day, on its own, producing new customers. We became the leading cash register reseller in Hungary with an automated platform handling communication, scheduling, and regulatory compliance, exceeding even our own goal of doubling the customer base.&rdquo;
             </blockquote>
+
+            <p class="font-mono text-sm text-accent-green/80 leading-relaxed mb-8">&ldquo;If I could have one wish for my business, it would be to always have professionals like Andras around — that's the key to our success.&rdquo;</p>
 
             <footer class="mt-auto">
                 <p class="text-text-primary font-semibold">Co-founder</p>
