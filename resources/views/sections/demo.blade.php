@@ -112,4 +112,4 @@
     <p class="text-sm text-text-secondary mt-6">
         Shared public demo · No real customer data · Data resets daily
     </p>
-</div>
+</section>
