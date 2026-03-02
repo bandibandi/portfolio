@@ -24,7 +24,7 @@
         {{-- Bio --}}
         <p class="text-lg text-text-secondary leading-relaxed mb-6">
             I’ve been working in IT for over 25 years, progressing from system administration to full-stack development.
-            Early in my career I managed enterprise infrastructure: server configuration, Linux administration, networking, Docker, and deployment automation across multiple sites, where stability, documentation, and operational discipline were essential.
+            Early in my career I managed enterprise infrastructure across a main office and multiple branch locations: server configuration, Linux administration, VPN, leased lines, and network management, where stability, documentation, and operational discipline were essential.
         </p>
 
         <p class="text-lg text-text-secondary leading-relaxed mb-6">
