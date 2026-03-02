@@ -36,24 +36,9 @@
                         I start by understanding what the system needs to do in the real world &mdash; not just on paper. The goal is to align on scope, priorities, and potential risks before a single line of code is written.
                     </p>
 
-                    <ul class="space-y-2 text-text-secondary text-base mb-4">
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            What business outcome is expected?
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            Who interacts with the system?
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            What constraints exist?
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            Where can complexity appear later?
-                        </li>
-                    </ul>
+                    <p class="text-text-secondary text-base leading-relaxed mb-4">
+                        What business outcome is expected? Who interacts with the system, and under what constraints? Where can complexity appear later? These are the questions that shape everything that follows.
+                    </p>
 
                     <p class="text-text-secondary text-sm leading-relaxed">
                         Well-defined boundaries early prevent architectural debt.
@@ -86,28 +71,9 @@
                         Before writing any code, I map out how data flows through the system. This blueprint defines what gets built &mdash; and more importantly, what doesn't. Every decision here saves hours of rework down the line.
                     </p>
 
-                    <ul class="space-y-2 text-text-secondary text-base mb-4">
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            Data structures and relationships
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            Domain boundaries
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            User roles and permissions
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            Validation logic
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
-                            Long-term scalability considerations
-                        </li>
-                    </ul>
+                    <p class="text-text-secondary text-base leading-relaxed mb-4">
+                        Data structures, domain boundaries, user roles, validation logic, and long-term scalability &mdash; all defined upfront. The architecture becomes the contract between what's possible and what's practical.
+                    </p>
 
                     <p class="text-text-secondary text-sm leading-relaxed">
                         A clear architecture makes development predictable and maintainable.
