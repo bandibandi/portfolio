@@ -2,7 +2,7 @@
     <div class="reveal">
         <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
             <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
-            Get in touch
+            Let's build your system
         </p>
 
         <h2 class="text-2xl font-semibold tracking-tight mb-3">Tell me about your project</h2>

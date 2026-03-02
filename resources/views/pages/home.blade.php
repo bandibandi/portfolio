@@ -5,6 +5,7 @@
     @include('sections.how-i-work')
     @include('sections.stack')
     @include('sections.projects')
+    @include('sections.testimonials')
     @include('sections.demo')
     @include('sections.contact')
 </x-layouts.app>

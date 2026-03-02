@@ -1,0 +1,51 @@
+<section id="testimonials" class="py-24 max-w-275 mx-auto px-4 sm:px-8">
+    <div class="reveal">
+        <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
+            <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
+            What clients say
+        </p>
+        <h2 class="text-2xl font-semibold tracking-tight mb-12">References</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+        @foreach ([
+            [
+                'quote' => 'Andras built us a backend system that lets me see any analytics about our customers within a minute, from anywhere. Since then, I can focus on strategic management tasks, because the website works 24 hours a day, on its own, producing new customers.',
+                'name' => 'Peter Varga',
+                'title' => 'Co-founder',
+                'company' => 'AP Cash Kft.',
+                'project' => 'Online cash register reseller platform',
+                'color' => 'accent-green',
+            ],
+            [
+                'quote' => 'The software Andras developed handles a high volume of customers and transactions reliably and transparently. He always focused on making the system as easy to use as possible, training new users was effortless.',
+                'name' => 'Daniel Novak',
+                'title' => 'CEO',
+                'company' => 'MediLine Uzlethaz Kft.',
+                'project' => 'Loyalty & coupon terminal system',
+                'color' => 'accent-purple',
+            ],
+            [
+                'quote' => 'I would recommend Andras anytime as a backend developer. His job was penetration testing and developing new functions for our industrial safety compliance system.',
+                'name' => 'Arpad Veress',
+                'title' => 'Managing Director',
+                'company' => 'EPDS Ltd.',
+                'project' => 'Hazardous area compliance software',
+                'color' => 'accent',
+            ],
+        ] as $testimonial)
+            <article class="reveal bg-bg-card border border-white/6 rounded-xl p-8 flex flex-col hover:border-{{ $testimonial['color'] }}/20 transition-all duration-300">
+                <p class="font-mono text-xs text-{{ $testimonial['color'] }} uppercase tracking-[1.5px] mb-4">{{ $testimonial['project'] }}</p>
+
+                <blockquote class="text-text-secondary text-base leading-relaxed mb-8 flex-1">
+                    &ldquo;{{ $testimonial['quote'] }}&rdquo;
+                </blockquote>
+
+                <footer>
+                    <p class="text-text-primary font-semibold">{{ $testimonial['name'] }}</p>
+                    <p class="text-text-secondary text-sm">{{ $testimonial['title'] }}, {{ $testimonial['company'] }}</p>
+                </footer>
+            </article>
+        @endforeach
+    </div>
+</section>

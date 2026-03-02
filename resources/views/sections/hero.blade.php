@@ -27,8 +27,7 @@
 
         <p class="text-lg text-text-secondary max-w-4xl leading-relaxed mb-10">
             I design and build <strong class="text-text-primary font-semibold">custom admin systems, internal tools, and automation platforms</strong>
-            for businesses that outgrow spreadsheets. My work helps teams operate faster,
-            reduce manual effort, and scale without chaos.
+            for businesses that outgrow spreadsheets. Less manual work, fewer errors, faster decisions.
         </p>
 
         <div class="flex flex-wrap gap-4">
