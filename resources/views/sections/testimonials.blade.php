@@ -11,7 +11,6 @@
         @foreach ([
             [
                 'quote' => 'Andras built us a backend system that lets me see any analytics about our customers within a minute, from anywhere. Since then, I can focus on strategic management tasks, because the website works 24 hours a day, on its own, producing new customers.',
-                'name' => 'Peter Varga',
                 'title' => 'Co-founder',
                 'company' => 'AP Cash Kft.',
                 'project' => 'Online cash register reseller platform',
@@ -20,7 +19,6 @@
             ],
             [
                 'quote' => 'The software Andras developed handles a high volume of customers and transactions reliably and transparently. He always focused on making the system as easy to use as possible, training new users was effortless.',
-                'name' => 'Daniel Novak',
                 'title' => 'CEO',
                 'company' => 'MediLine Uzlethaz Kft.',
                 'project' => 'Loyalty & coupon terminal system',
@@ -29,7 +27,6 @@
             ],
             [
                 'quote' => 'I would recommend Andras anytime as a backend developer. His job was penetration testing and developing new functions for our industrial safety compliance system.',
-                'name' => 'Arpad Veress',
                 'title' => 'Managing Director',
                 'company' => 'EPDS Ltd.',
                 'project' => 'Hazardous area compliance software',
@@ -51,8 +48,8 @@
                 @endif
 
                 <footer>
-                    <p class="text-text-primary font-semibold">{{ $testimonial['name'] }}</p>
-                    <p class="text-text-secondary text-sm">{{ $testimonial['title'] }}, {{ $testimonial['company'] }}</p>
+                    <p class="text-text-primary font-semibold">{{ $testimonial['title'] }}</p>
+                    <p class="text-text-secondary text-sm">{{ $testimonial['company'] }}</p>
                 </footer>
             </article>
         @endforeach
