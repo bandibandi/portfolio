@@ -26,7 +26,7 @@
                 <h3 class="text-lg font-semibold">Strategic Understanding</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
                 <div>
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Clarify the objective.
@@ -72,7 +72,7 @@
                 <h3 class="text-lg font-semibold">System Architecture</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
                 <div>
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Design the core.
@@ -122,7 +122,7 @@
                 <h3 class="text-lg font-semibold">Controlled Execution</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
                 <div>
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Development follows structure.
@@ -153,7 +153,7 @@
                 <h3 class="text-lg font-semibold">Quality Assurance & Hardening</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
                 <div>
                     <p class="text-text-secondary leading-relaxed mb-4">
                         A system that works is not the same as a system you can rely on.
@@ -184,7 +184,7 @@
                 <h3 class="text-lg font-semibold">Sustainable Delivery</h3>
             </div>
 
-            <div class="grid md:grid-cols-[1fr,minmax(0,20rem)] gap-8">
+            <div class="grid md:grid-cols-[1fr_minmax(0,20rem)] gap-8">
                 <div>
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Built to remain understandable months or years later.
