@@ -1,14 +1,16 @@
 <section id="projects" class="py-24 max-w-275 mx-auto px-4 sm:px-8">
-    <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
-        <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
-        Selected work
-    </p>
-    <h2 class="text-2xl font-semibold tracking-tight mb-3">Projects</h2>
-    <p class="text-text-secondary mb-12">Live, revenue-generating systems I build and maintain end-to-end.</p>
+    <div class="reveal">
+        <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
+            <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
+            Selected work
+        </p>
+        <h2 class="text-2xl font-semibold tracking-tight mb-3">Projects</h2>
+        <p class="text-text-secondary mb-12">Live, revenue-generating systems I build and maintain end-to-end.</p>
+    </div>
 
     <div class="space-y-8">
         {{-- NordWoodArt --}}
-        <article class="bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
+        <article class="reveal bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
             <picture>
                 <source srcset="{{ asset('images/nwa.webp') }}" type="image/webp">
                 <img
@@ -132,7 +134,7 @@
         </article>
 
         {{-- Public Sector IT --}}
-        <article class="bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
+        <article class="reveal bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
             <div class="p-8">
                 <p class="font-mono text-xs text-accent-blue uppercase tracking-[1.5px] mb-2">Public Sector Information System</p>
                 <h3 class="text-[1.4rem] font-semibold tracking-tight mb-4">Government Funding Platform</h3>
@@ -172,7 +174,7 @@
         </article>
 
         {{-- IoT Loyalty Terminal --}}
-        <article class="bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
+        <article class="reveal bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
             <div class="p-8">
                 <p class="font-mono text-xs text-accent-purple uppercase tracking-[1.5px] mb-2">IoT &amp; Hardware</p>
                 <h3 class="text-[1.4rem] font-semibold tracking-tight mb-4">Retail Loyalty Terminal System</h3>
@@ -212,7 +214,7 @@
         </article>
 
         {{-- Coming Soon --}}
-        <article class="bg-bg-card border border-white/6 border-dashed rounded-xl p-8">
+        <article class="reveal bg-bg-card border border-white/6 border-dashed rounded-xl p-8">
             <p class="font-mono text-xs text-accent-yellow uppercase tracking-[1.5px] mb-2">Coming soon</p>
             <h3 class="text-[1.4rem] font-semibold tracking-tight mb-3">Open Source &amp; GitHub Projects</h3>
             <p class="text-text-secondary text-base leading-relaxed mb-6">

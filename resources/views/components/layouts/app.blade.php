@@ -87,6 +87,41 @@
 
     @livewireScripts
     <script>
+    // Scroll reveal
+    (function () {
+        const reveals = document.querySelectorAll('.reveal');
+        if (!reveals.length) return;
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => obs.observe(el));
+    })();
+
+    // Number count-up animation
+    (function () {
+        document.querySelectorAll('[data-count]').forEach(el => {
+            const target = parseInt(el.dataset.count);
+            const obs = new IntersectionObserver((entries) => {
+                if (!entries[0].isIntersecting) return;
+                obs.disconnect();
+                let current = 0;
+                const step = () => {
+                    current++;
+                    el.textContent = String(current).padStart(2, '0');
+                    if (current < target) requestAnimationFrame(step);
+                };
+                requestAnimationFrame(step);
+            }, { threshold: 0.5 });
+            obs.observe(el);
+        });
+    })();
+    </script>
+    <script>
     (function () {
         const slot = document.getElementById('contact-form-slot');
         if (!slot) return;

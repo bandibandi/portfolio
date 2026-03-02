@@ -64,6 +64,18 @@
 html {
     font-size: 17px;
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Selection color */
@@ -105,11 +117,28 @@ html {
     animation: blink 1s step-end infinite;
 }
 
+/* Tech stack icon hover glow */
+.stack-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.stack-icon:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 8px rgba(122, 162, 247, 0.5));
+}
+
 /* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
     .animate-float,
     .animate-blink {
         animation: none;
+    }
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+    .stack-icon:hover {
+        transform: none;
+        filter: none;
     }
     * {
         transition-duration: 0.01ms !important;

@@ -4,9 +4,13 @@
     <div class="absolute -top-[40%] right-[10%] w-250 h-250 bg-[radial-gradient(circle,rgba(122,162,247,0.08),transparent_50%)] pointer-events-none animate-float blur-3xl will-change-transform"></div>
 
     <div class="max-w-275 w-full px-4 sm:px-8 relative z-10">
-        <p class="font-mono text-sm text-accent mb-6 flex items-center gap-2.5">
+        <p class="font-mono text-sm text-accent mb-6 flex items-center gap-2.5"
+           x-data="{ text: '', full: 'Available for freelance work', i: 0 }"
+           x-init="const t = setInterval(() => { if (i < full.length) { text += full[i]; i++; } else clearInterval(t); }, 50)"
+        >
             <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
-            Available for freelance work
+            <span x-text="text"></span>
+            <span class="sr-only">Available for freelance work</span>
         </p>
 
         <h1 class="text-balance text-[clamp(2.5rem,6vw,4.2rem)] font-bold leading-[1.15] tracking-tight mb-6">

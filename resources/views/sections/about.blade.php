@@ -1,11 +1,13 @@
 <section id="about" class="py-24 max-w-275 mx-auto px-4 sm:px-8">
-    <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
-        <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
-        Who I am
-    </p>
-    <h2 class="text-2xl font-semibold tracking-tight mb-3">About</h2>
+    <div class="reveal">
+        <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
+            <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
+            Who I am
+        </p>
+        <h2 class="text-2xl font-semibold tracking-tight mb-3">About</h2>
+    </div>
 
-    <div class="mt-12">
+    <div class="reveal mt-12">
         {{-- Photo --}}
         <picture>
             <source srcset="{{ asset('images/photo_AH.webp') }}" type="image/webp">

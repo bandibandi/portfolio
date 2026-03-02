@@ -1,10 +1,12 @@
 <section id="services" class="py-24 max-w-275 mx-auto px-4 sm:px-8">
-    <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
-        <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
-        What I can build for you
-    </p>
-    <h2 class="text-2xl font-semibold tracking-tight mb-3">Services</h2>
-<div class="mb-12 flex gap-4">
+    <div class="reveal">
+        <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
+            <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
+            What I can build for you
+        </p>
+        <h2 class="text-2xl font-semibold tracking-tight mb-3">Services</h2>
+    </div>
+<div class="reveal mb-12 flex gap-4">
     <span class="w-0.5 bg-accent/60 rounded-full self-stretch"></span>
 
     <div>
@@ -18,7 +20,7 @@
     </div>
 </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="reveal grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         @foreach ([
             [
                 'title' => 'Custom Admin Systems',
@@ -53,7 +55,7 @@
     </div>
 
     {{-- Business impact --}}
-    <div class="mt-16 border border-white/6 rounded-xl p-10 bg-bg-card/40">
+    <div class="reveal mt-16 border border-white/6 rounded-xl p-10 bg-bg-card/40">
         <h3 class="text-xl font-semibold mb-6">Real business impact</h3>
 
         <ul class="grid sm:grid-cols-2 gap-x-10 gap-y-4 text-text-secondary text-base leading-relaxed">

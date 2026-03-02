@@ -1,28 +1,30 @@
 <section id="how-i-work" class="py-24 max-w-275 mx-auto px-4 sm:px-8">
-    <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
-        <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
-        How I deliver results
-    </p>
-    <h2 class="text-2xl font-semibold tracking-tight mb-3">How I Work</h2>
+    <div class="reveal">
+        <p class="font-mono text-sm text-accent uppercase tracking-[2px] mb-3 flex items-center gap-2.5">
+            <span class="w-0.5 h-4 bg-accent shrink-0 animate-blink" aria-hidden="true"></span>
+            How I deliver results
+        </p>
+        <h2 class="text-2xl font-semibold tracking-tight mb-3">How I Work</h2>
 
-    <div class="mb-12 flex gap-4">
-        <span class="w-0.5 bg-accent/60 rounded-full self-stretch"></span>
-        <div>
-            <p class="text-text-secondary mb-2">
-                I approach every project as a system. Most projects move through the same five phases.
-            </p>
-            <p class="text-text-secondary/80 text-base">
-                Technology is a tool. Structure is the foundation.
-            </p>
+        <div class="mb-12 flex gap-4">
+            <span class="w-0.5 bg-accent/60 rounded-full self-stretch"></span>
+            <div>
+                <p class="text-text-secondary mb-2">
+                    I approach every project as a system. Most projects move through the same five phases.
+                </p>
+                <p class="text-text-secondary/80 text-base">
+                    Technology is a tool. Structure is the foundation.
+                </p>
+            </div>
         </div>
     </div>
 
     <div class="space-y-6">
 
         {{-- Phase 1 --}}
-        <div class="bg-bg-card border border-white/6 rounded-xl p-8">
+        <div class="reveal bg-bg-card border border-white/6 rounded-xl p-8" style="transition-delay: 0ms">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-xl">01</span>
+                <span class="font-mono text-accent text-xl" data-count="1">00</span>
                 <h3 class="text-lg font-semibold">Strategic Understanding</h3>
             </div>
 
@@ -55,9 +57,9 @@
         </div>
 
         {{-- Phase 2 --}}
-        <div class="bg-bg-card border border-white/6 rounded-xl p-8">
+        <div class="reveal bg-bg-card border border-white/6 rounded-xl p-8" style="transition-delay: 100ms">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-xl">02</span>
+                <span class="font-mono text-accent text-xl" data-count="2">00</span>
                 <h3 class="text-lg font-semibold">System Architecture</h3>
             </div>
 
@@ -90,9 +92,9 @@
         </div>
 
         {{-- Phase 3 --}}
-        <div class="bg-bg-card border border-white/6 rounded-xl p-8">
+        <div class="reveal bg-bg-card border border-white/6 rounded-xl p-8" style="transition-delay: 200ms">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-xl">03</span>
+                <span class="font-mono text-accent text-xl" data-count="3">00</span>
                 <h3 class="text-lg font-semibold">Controlled Execution</h3>
             </div>
 
@@ -121,9 +123,9 @@
         </div>
 
         {{-- Phase 4 --}}
-        <div class="bg-bg-card border border-white/6 rounded-xl p-8">
+        <div class="reveal bg-bg-card border border-white/6 rounded-xl p-8" style="transition-delay: 300ms">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-xl">04</span>
+                <span class="font-mono text-accent text-xl" data-count="4">00</span>
                 <h3 class="text-lg font-semibold">Quality Assurance & Hardening</h3>
             </div>
 
@@ -152,9 +154,9 @@
         </div>
 
         {{-- Phase 5 --}}
-        <div class="bg-bg-card border border-white/6 rounded-xl p-8">
+        <div class="reveal bg-bg-card border border-white/6 rounded-xl p-8" style="transition-delay: 400ms">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-xl">05</span>
+                <span class="font-mono text-accent text-xl" data-count="5">00</span>
                 <h3 class="text-lg font-semibold">Sustainable Delivery</h3>
             </div>
 
