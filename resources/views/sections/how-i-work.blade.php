@@ -22,7 +22,7 @@
         {{-- Phase 1 --}}
         <div class="bg-bg-card border border-white/6 rounded-xl p-8">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-sm">01</span>
+                <span class="font-mono text-accent text-xl">01</span>
                 <h3 class="text-lg font-semibold">Strategic Understanding</h3>
             </div>
 
@@ -40,7 +40,7 @@
                         What business outcome is expected? Who interacts with the system, and under what constraints? Where can complexity appear later? These are the questions that shape everything that follows.
                     </p>
 
-                    <p class="text-text-secondary text-sm leading-relaxed">
+                    <p class="text-text-primary text-sm leading-relaxed">
                         Well-defined boundaries early prevent architectural debt.
                     </p>
                 </div>
@@ -57,7 +57,7 @@
         {{-- Phase 2 --}}
         <div class="bg-bg-card border border-white/6 rounded-xl p-8">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-sm">02</span>
+                <span class="font-mono text-accent text-xl">02</span>
                 <h3 class="text-lg font-semibold">System Architecture</h3>
             </div>
 
@@ -75,7 +75,7 @@
                         Data structures, domain boundaries, user roles, validation logic, scalability. All defined upfront so the architecture holds up as the project grows.
                     </p>
 
-                    <p class="text-text-secondary text-sm leading-relaxed">
+                    <p class="text-text-primary text-sm leading-relaxed">
                         A clear architecture makes development predictable and maintainable.
                     </p>
                 </div>
@@ -92,7 +92,7 @@
         {{-- Phase 3 --}}
         <div class="bg-bg-card border border-white/6 rounded-xl p-8">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-sm">03</span>
+                <span class="font-mono text-accent text-xl">03</span>
                 <h3 class="text-lg font-semibold">Controlled Execution</h3>
             </div>
 
@@ -106,7 +106,7 @@
                         I deliver in focused iterations. Each round produces working functionality you can test against your actual workflow. Validation rules, authorization policies, and data integrity constraints are built in from the start.
                     </p>
 
-                    <p class="text-text-secondary text-sm leading-relaxed">
+                    <p class="text-text-primary text-sm leading-relaxed">
                         Early feedback keeps the cost of change low. That's the entire point of iterative delivery.
                     </p>
                 </div>
@@ -123,7 +123,7 @@
         {{-- Phase 4 --}}
         <div class="bg-bg-card border border-white/6 rounded-xl p-8">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-sm">04</span>
+                <span class="font-mono text-accent text-xl">04</span>
                 <h3 class="text-lg font-semibold">Quality Assurance & Hardening</h3>
             </div>
 
@@ -137,7 +137,7 @@
                         Before anything goes live, I stress-test the full workflow. Boundary conditions, role-based access, data integrity under load, and edge cases that users will find even if you don't.
                     </p>
 
-                    <p class="text-text-secondary text-base leading-relaxed">
+                    <p class="text-text-primary text-sm leading-relaxed">
                         I spent over two decades in software quality assurance. I don't test because the process says so. I test because I know what breaks in production when you don't.
                     </p>
                 </div>
@@ -154,7 +154,7 @@
         {{-- Phase 5 --}}
         <div class="bg-bg-card border border-white/6 rounded-xl p-8">
             <div class="flex items-baseline gap-3 mb-4">
-                <span class="font-mono text-accent text-sm">05</span>
+                <span class="font-mono text-accent text-xl">05</span>
                 <h3 class="text-lg font-semibold">Sustainable Delivery</h3>
             </div>
 
@@ -168,7 +168,7 @@
                         Clean, maintainable code. Logical structure that speaks for itself. Documentation where it matters. A foundation that allows growth without rewrite.
                     </p>
 
-                    <p class="text-text-secondary text-sm leading-relaxed">
+                    <p class="text-text-primary text-sm leading-relaxed">
                         I build systems meant to last.
                     </p>
                 </div>
