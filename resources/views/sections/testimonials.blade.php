@@ -7,22 +7,30 @@
         <h2 class="text-2xl font-semibold tracking-tight mb-12">References</h2>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 gap-6">
+        {{-- Featured testimonial --}}
+        <article class="reveal md:col-span-2 bg-bg-card border border-white/6 rounded-xl p-8 md:p-10 flex flex-col hover:border-accent-green/20 transition-all duration-300">
+            <p class="font-mono text-xs text-accent-green uppercase tracking-[1.5px] mb-4">Online cash register reseller platform</p>
+
+            <blockquote class="text-text-secondary text-lg leading-relaxed mb-4 max-w-3xl">
+                &ldquo;Andras built us a backend system that lets me see any analytics about our customers within a minute, from anywhere. Since then, I can focus on strategic management tasks, because the website works 24 hours a day, on its own, producing new customers.&rdquo;
+            </blockquote>
+
+            <p class="text-sm text-text-secondary/70 mb-8 italic max-w-3xl">Became the leading cash register reseller in Hungary with an automated platform handling communication, scheduling, and regulatory compliance, exceeding even their own goal of doubling the customer base.</p>
+
+            <footer>
+                <p class="text-text-primary font-semibold">Co-founder</p>
+                <p class="text-text-secondary text-sm">AP Cash Ltd.</p>
+            </footer>
+        </article>
+
+        {{-- Other testimonials --}}
         @foreach ([
-            [
-                'quote' => 'Andras built us a backend system that lets me see any analytics about our customers within a minute, from anywhere. Since then, I can focus on strategic management tasks, because the website works 24 hours a day, on its own, producing new customers.',
-                'title' => 'Co-founder',
-                'company' => 'AP Cash Kft.',
-                'project' => 'Online cash register reseller platform',
-                'context' => 'Became the leading cash register reseller in Hungary with an automated platform handling communication, scheduling, and regulatory compliance, exceeding even their own goal of doubling the customer base.',
-                'color' => 'accent-green',
-            ],
             [
                 'quote' => 'The software Andras developed handles a high volume of customers and transactions reliably and transparently. He always focused on making the system as easy to use as possible, training new users was effortless.',
                 'title' => 'CEO',
-                'company' => 'MediLine Uzlethaz Kft.',
+                'company' => 'MediLine Uzlethaz Ltd.',
                 'project' => 'Loyalty & coupon terminal system',
-                'context' => null,
                 'color' => 'accent-purple',
             ],
             [
@@ -30,7 +38,6 @@
                 'title' => 'Managing Director',
                 'company' => 'EPDS Ltd.',
                 'project' => 'Hazardous area compliance software',
-                'context' => null,
                 'color' => 'accent',
             ],
         ] as $testimonial)
@@ -41,11 +48,7 @@
                     &ldquo;{{ $testimonial['quote'] }}&rdquo;
                 </blockquote>
 
-                @if ($testimonial['context'])
-                    <p class="text-sm text-text-secondary/70 mb-8 italic">{{ $testimonial['context'] }}</p>
-                @else
-                    <div class="mb-8"></div>
-                @endif
+                <div class="mb-8"></div>
 
                 <footer>
                     <p class="text-text-primary font-semibold">{{ $testimonial['title'] }}</p>
