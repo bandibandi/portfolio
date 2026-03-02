@@ -131,6 +131,86 @@
             </div>
         </article>
 
+        {{-- Public Sector IT --}}
+        <article class="bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
+            <div class="p-8">
+                <p class="font-mono text-xs text-accent-blue uppercase tracking-[1.5px] mb-2">Public Sector Information System</p>
+                <h3 class="text-[1.4rem] font-semibold tracking-tight mb-4">Government Funding Platform</h3>
+
+                <div class="grid md:grid-cols-3 gap-5 mb-7">
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">Context</p>
+                        <p class="text-sm text-text-secondary leading-relaxed">
+                            One of Hungary's most critical public administration platforms, processing national funding programs for 100,000+ users.
+                        </p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">My role</p>
+                        <p class="text-sm text-text-secondary leading-relaxed">
+                            Senior Software Developer &mdash; developing and testing a large-scale government information system since 2017.
+                        </p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">Scale</p>
+                        <p class="text-sm text-text-secondary leading-relaxed">
+                            <strong class="text-text-primary font-semibold">100,000+ users</strong>, enterprise-grade reliability, performance testing with Apache JMeter.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-text-secondary text-base leading-relaxed mb-6">
+                    Built and tested enterprise applications in a high-stakes environment where stability, auditability, and long-term maintainability are non-negotiable.
+                    Extensive experience with CI/CD pipelines, quality assurance, and complex legacy codebases serving critical public workflows.
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                    @foreach (['PHP', 'JavaScript', 'REST API', 'MySQL', 'CI/CD', 'JMeter', 'Linux', 'Docker'] as $tag)
+                        <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-accent/10 text-accent border border-accent/15">{{ $tag }}</span>
+                    @endforeach
+                </div>
+            </div>
+        </article>
+
+        {{-- IoT Loyalty Terminal --}}
+        <article class="bg-bg-card border border-white/6 rounded-xl overflow-hidden hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-300">
+            <div class="p-8">
+                <p class="font-mono text-xs text-accent-purple uppercase tracking-[1.5px] mb-2">IoT &amp; Hardware</p>
+                <h3 class="text-[1.4rem] font-semibold tracking-tight mb-4">Retail Loyalty Terminal System</h3>
+
+                <div class="grid md:grid-cols-3 gap-5 mb-7">
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">Problem</p>
+                        <p class="text-sm text-text-secondary leading-relaxed">
+                            A retail chain needed a loyalty and rewards system across 24 locations with no off-the-shelf solution fitting their requirements.
+                        </p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">What I built</p>
+                        <p class="text-sm text-text-secondary leading-relaxed">
+                            Raspberry Pi&ndash;based terminals with custom 3D-printed housings, dual displays, barcode and RFID card readers, and remote deployment.
+                        </p>
+                    </div>
+                    <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
+                        <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">Result</p>
+                        <p class="text-sm text-text-secondary leading-relaxed">
+                            <strong class="text-text-primary font-semibold">24 locations nationwide</strong> &mdash; personalized promotions, store-specific rewards, and anonymous card distribution on first use.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-text-secondary text-base leading-relaxed mb-6">
+                    Full hardware and software development from prototype to production. Custom 3D-printed terminal housing, dual display setup (customer screen + merchant screen), point collection and redemption with store-specific and customer-specific rewards.
+                    Built with Python, immutable OS (SquashFS root, tmpfs overlay), and remote application deployment.
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                    @foreach (['Python', 'Raspberry Pi', 'Linux', 'RFID', '3D Printing', 'IoT', 'SquashFS'] as $tag)
+                        <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-accent/10 text-accent border border-accent/15">{{ $tag }}</span>
+                    @endforeach
+                </div>
+            </div>
+        </article>
+
         {{-- Coming Soon --}}
         <article class="bg-bg-card border border-white/6 border-dashed rounded-xl p-8">
             <p class="font-mono text-xs text-accent-yellow uppercase tracking-[1.5px] mb-2">Coming soon</p>

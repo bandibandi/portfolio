@@ -21,8 +21,8 @@
 
         {{-- Bio --}}
         <p class="text-lg text-text-secondary leading-relaxed mb-6">
-            I’ve been working in IT for over 15 years, starting on the infrastructure side before moving fully into software engineering.
-            Early in my career I managed enterprise infrastructure across multiple sites in a large multinational environment, where stability, documentation, and operational discipline were essential.
+            I’ve been working in IT for over 25 years, progressing from system administration to full-stack development.
+            Early in my career I managed enterprise infrastructure &mdash; server configuration, Linux administration, networking, Docker, and deployment automation across multiple sites &mdash; where stability, documentation, and operational discipline were essential.
         </p>
 
         <p class="text-lg text-text-secondary leading-relaxed mb-6">
@@ -49,7 +49,7 @@
         {{-- Quick facts --}}
         <div class="clear-left grid grid-cols-2 gap-3">
             @foreach ([
-                '15+ years in IT',
+                '25+ years in IT',
                 'BSc in Computer Science',
                 'Laravel • Filament • TALL stack',
                 'English & Hungarian',

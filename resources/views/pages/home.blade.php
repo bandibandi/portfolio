@@ -2,6 +2,7 @@
     @include('sections.hero')
     @include('sections.about')
     @include('sections.services')
+    @include('sections.how-i-work')
     @include('sections.stack')
     @include('sections.projects')
     @include('sections.demo')

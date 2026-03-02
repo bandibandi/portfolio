@@ -11,6 +11,7 @@ class Nav extends Component
     public array $navItems = [
         ['id' => 'about', 'label' => 'About'],
         ['id' => 'services', 'label' => 'Services'],
+        ['id' => 'how-i-work', 'label' => 'Process'],
         ['id' => 'stack', 'label' => 'Stack'],
         ['id' => 'projects', 'label' => 'Projects'],
         ['id' => 'demo', 'label' => 'Live Demo'],

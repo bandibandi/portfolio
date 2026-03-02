@@ -42,5 +42,9 @@
                 Live admin demo →
             </a>
         </div>
+
+        <p class="mt-16 text-sm text-text-secondary/60 font-mono tracking-wide italic">
+            "Well-architected software compounds in value over time."
+        </p>
     </div>
 </section>

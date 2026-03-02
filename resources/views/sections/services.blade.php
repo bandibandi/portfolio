@@ -26,7 +26,7 @@
             ],
             [
                 'title' => 'Internal Business Tools',
-                'description' => 'Custom CRM, logistics, and operations software built around how your company really works — not generic templates.',
+                'description' => 'Custom CRM, logistics, and operations software built around how your company really works — backed by 15+ years of enterprise systems experience.',
             ],
             [
                 'title' => 'E-Commerce Infrastructure',
@@ -38,7 +38,7 @@
             ],
             [
                 'title' => 'Legacy System Upgrades',
-                'description' => 'Modernizing aging PHP systems into maintainable Laravel architecture without disrupting operations.',
+                'description' => 'Modernizing aging PHP systems (CodeIgniter, Yii, vanilla PHP) into maintainable Laravel architecture — with hands-on migration experience across enterprise codebases.',
             ],
             [
                 'title' => 'Automation Pipelines',
