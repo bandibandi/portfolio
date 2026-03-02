@@ -103,7 +103,7 @@
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
-                        I deliver in focused iterations. Each round produces working functionality you can test against your actual workflow. Validation rules, authorization policies, and data integrity constraints are built in from the start.
+                        I deliver in focused iterations. Each round produces working functionality you can test against your actual workflow. Validation rules, authorization policies, and data integrity constraints are built in from the start. Automated feature tests run with every change.
                     </p>
 
                     <p class="text-text-primary text-sm leading-relaxed">
@@ -134,7 +134,7 @@
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
-                        Before anything goes live, I test the full workflow. Boundary conditions, role-based access, data consistency, and the edge cases that real users always find.
+                        Before anything goes live, I run end-to-end browser tests against the full workflow. Boundary conditions, role-based access, data consistency, and the edge cases that real users always find.
                     </p>
 
                     <p class="text-text-primary text-sm leading-relaxed">
