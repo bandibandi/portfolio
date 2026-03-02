@@ -32,6 +32,10 @@
                         Clarify the objective.
                     </p>
 
+                    <p class="text-text-secondary text-base leading-relaxed mb-4">
+                        I start by understanding what the system needs to do in the real world &mdash; not just on paper. The goal is to align on scope, priorities, and potential risks before a single line of code is written.
+                    </p>
+
                     <ul class="space-y-2 text-text-secondary text-base mb-4">
                         <li class="flex items-start gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2"></span>
@@ -76,6 +80,10 @@
                 <div class="flex-1 min-w-0">
                     <p class="text-text-secondary leading-relaxed mb-4">
                         Design the core.
+                    </p>
+
+                    <p class="text-text-secondary text-base leading-relaxed mb-4">
+                        Before writing any code, I map out how data flows through the system. This blueprint defines what gets built &mdash; and more importantly, what doesn't. Every decision here saves hours of rework down the line.
                     </p>
 
                     <ul class="space-y-2 text-text-secondary text-base mb-4">
