@@ -143,7 +143,7 @@
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
                         <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">Context</p>
                         <p class="text-sm text-text-secondary leading-relaxed">
-                            One of Hungary's most critical public administration platforms, processing national funding programs for 100,000+ users.
+                            One of the most critical national public administration platforms, processing government funding programs for 100,000+ users.
                         </p>
                     </div>
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
@@ -155,7 +155,7 @@
                     <div class="bg-bg-card/40 border border-white/6 rounded-lg p-4">
                         <p class="font-mono text-[0.72rem] text-text-secondary uppercase tracking-[1.5px] mb-2">Scale</p>
                         <p class="text-sm text-text-secondary leading-relaxed">
-                            <strong class="text-text-primary font-semibold">100,000+ users</strong>, enterprise-grade reliability, performance testing with Apache JMeter.
+                            <strong class="text-text-primary font-semibold">100,000+ users</strong> across the platform. Load and performance testing with Apache JMeter.
                         </p>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
             Get in touch
         </p>
 
-        <h2 class="text-2xl font-semibold tracking-tight mb-3">Let’s work together</h2>
+        <h2 class="text-2xl font-semibold tracking-tight mb-3">Tell me about your project</h2>
     </div>
 
     <div class="reveal">
