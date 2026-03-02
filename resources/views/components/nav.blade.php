@@ -1,5 +1,22 @@
 <nav
-    x-data="{ open: false, scrolled: false }"
+    x-data="{
+        open: false,
+        scrolled: false,
+        activeSection: '',
+        init() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        this.activeSection = entry.target.id;
+                    }
+                });
+            }, { rootMargin: '-40% 0px -40% 0px' });
+
+            document.querySelectorAll('section[id]').forEach(section => {
+                observer.observe(section);
+            });
+        }
+    }"
     x-on:scroll.window="scrolled = window.scrollY > 50"
     :class="scrolled ? 'shadow-lg' : ''"
     class="fixed top-0 left-0 right-0 z-50 bg-bg-deep/85 backdrop-blur-xl border-b border-white/6 transition-all duration-300"
@@ -18,7 +35,10 @@
                 @foreach ($navItems as $item)
                     <a
                         href="#{{ $item['id'] }}"
-                        class="text-text-secondary hover:text-accent transition-colors text-[0.85rem] uppercase tracking-[0.5px]"
+                        class="text-[0.85rem] uppercase tracking-[0.5px] transition-all duration-300"
+                        :class="activeSection === '{{ $item['id'] }}'
+                            ? 'text-text-primary -translate-y-0.5'
+                            : 'text-text-secondary hover:text-accent'"
                     >
                         {{ $item['label'] }}
                     </a>
@@ -67,7 +87,10 @@
                 <a
                     href="#{{ $item['id'] }}"
                     x-on:click="open = false"
-                    class="block text-text-secondary hover:text-accent transition-colors text-sm uppercase tracking-[0.5px]"
+                    class="block text-sm uppercase tracking-[0.5px] transition-all duration-300"
+                    :class="activeSection === '{{ $item['id'] }}'
+                        ? 'text-text-primary'
+                        : 'text-text-secondary hover:text-accent'"
                 >
                     {{ $item['label'] }}
                 </a>
