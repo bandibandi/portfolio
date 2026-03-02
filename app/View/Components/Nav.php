@@ -14,6 +14,7 @@ class Nav extends Component
         ['id' => 'how-i-work', 'label' => 'Process'],
         ['id' => 'stack', 'label' => 'Stack'],
         ['id' => 'projects', 'label' => 'Projects'],
+        ['id' => 'testimonials', 'label' => 'References'],
         ['id' => 'demo', 'label' => 'Live Demo'],
         ['id' => 'contact', 'label' => 'Contact'],
     ];
