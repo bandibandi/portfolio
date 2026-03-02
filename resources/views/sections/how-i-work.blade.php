@@ -114,7 +114,7 @@
                 <div class="bg-bg-deep border-l-2 border-accent/40 rounded-r-lg px-5 py-4 self-start md:w-80 md:shrink-0">
                     <p class="text-sm text-text-secondary leading-relaxed">
                         <span class="font-semibold text-text-primary">Your role:</span>
-                        Test each delivery. Try to break it. If something feels off, say so. Changes are still possible and affordable, but they may carry scope and timeline implications.
+                        Test each delivery. Try to break it. If something feels off, say so. Changes are still possible, but they may carry scope and timeline implications.
                     </p>
                 </div>
             </div>
@@ -134,11 +134,11 @@
                     </p>
 
                     <p class="text-text-secondary text-base leading-relaxed mb-4">
-                        Before anything goes live, I stress-test the full workflow. Boundary conditions, role-based access, data integrity under load, and edge cases that users will find even if you don't.
+                        Before anything goes live, I test the full workflow. Boundary conditions, role-based access, data consistency, and the edge cases that real users always find.
                     </p>
 
                     <p class="text-text-primary text-sm leading-relaxed">
-                        I spent over two decades in software quality assurance. I don't test because the process says so. I test because I know what breaks in production when you don't.
+                        Production issues are expensive. Testing is not.
                     </p>
                 </div>
 
