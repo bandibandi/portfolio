@@ -18,7 +18,6 @@
     >
         <template x-if="loaded">
             <video class="w-full rounded-lg" controls autoplay muted loop playsinline preload="metadata">
-                <source src="/videos/demo-preview.webm" type="video/webm">
                 <source src="/videos/demo-preview.mp4" type="video/mp4">
             </video>
         </template>
