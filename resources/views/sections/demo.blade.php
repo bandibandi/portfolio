@@ -12,10 +12,16 @@
     </p>
 
     {{-- Demo preview video --}}
-    <div class="mb-10 border border-white/6 rounded-lg bg-bg-deep">
-        <video class="w-full rounded-lg" controls autoplay muted loop playsinline preload="metadata">
-            <source src="/videos/demo-preview.mp4" type="video/mp4">
-        </video>
+    <div class="mb-10 border border-white/6 rounded-lg bg-bg-deep"
+         x-data="{ loaded: false }"
+         x-intersect.once="loaded = true"
+    >
+        <template x-if="loaded">
+            <video class="w-full rounded-lg" controls autoplay muted loop playsinline preload="metadata">
+                <source src="/videos/demo-preview.webm" type="video/webm">
+                <source src="/videos/demo-preview.mp4" type="video/mp4">
+            </video>
+        </template>
     </div>
 
     {{-- Feature Overview (demo-relevant) --}}
