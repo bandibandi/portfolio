@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36432cfb8fd5cdca576b12cdc6838026",
+    "content-hash": "943f7bc2889282521b9b52b58a63140b",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -4117,6 +4117,90 @@
                 }
             ],
             "time": "2025-12-27T19:41:33+00:00"
+        },
+        {
+            "name": "pirsch-analytics/laravel-pirsch",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pirsch-analytics/laravel-pirsch.git",
+                "reference": "c215afabac703b492db10dd86f00331b9314328d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pirsch-analytics/laravel-pirsch/zipball/c215afabac703b492db10dd86f00331b9314328d",
+                "reference": "c215afabac703b492db10dd86f00331b9314328d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/http": "^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.8",
+                "larastan/larastan": "^2.0|^3.0",
+                "laravel/pint": "^0.2.2|^1.21",
+                "nunomaduro/collision": "^6.0|^7.0|^8.0",
+                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+                "pestphp/pest-plugin-laravel": "^1.1|^2.0|^3.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0|^2.0",
+                "phpstan/phpstan-phpunit": "^1.0|^2.0",
+                "phpunit/phpunit": "^9.5|^10.0|^11.5.3",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Pirsch": "Pirsch\\Facades\\Pirsch"
+                    },
+                    "providers": [
+                        "Pirsch\\PirschServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pirsch\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marvin Blum",
+                    "email": "marvin.blum@emvi.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Zep Fietje",
+                    "email": "hey@zepfietje.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Official Laravel integration for Pirsch Analytics.",
+            "homepage": "https://github.com/pirsch-analytics/laravel-pirsch",
+            "keywords": [
+                "laravel",
+                "laravel-pirsch",
+                "pirsch-analytics"
+            ],
+            "support": {
+                "issues": "https://github.com/pirsch-analytics/laravel-pirsch/issues",
+                "source": "https://github.com/pirsch-analytics/laravel-pirsch/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/zepfietje",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-20T20:23:04+00:00"
         },
         {
             "name": "pragmarx/google2fa",
