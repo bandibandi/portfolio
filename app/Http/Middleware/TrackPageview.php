@@ -18,6 +18,8 @@ class TrackPageview extends Middleware
         Log::info('Pirsch middleware handle()', [
             'url' => $request->fullUrl(),
             'ip' => $request->ip(),
+            'cf_ip' => $request->header('CF-Connecting-IP'),
+            'x_forwarded' => $request->header('X-Forwarded-For'),
             'token_set' => ! empty(config('pirsch.token')),
         ]);
 
