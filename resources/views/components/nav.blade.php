@@ -26,23 +26,29 @@
     <div class="max-w-275 mx-auto px-4 sm:px-8">
         <div class="flex items-center justify-between h-16">
             {{-- Logo --}}
-            <a href="#" class="font-mono text-accent font-medium text-lg" aria-label="Home">
+            <a href="{{ route('home') }}" class="font-mono text-accent font-medium text-lg" aria-label="Home">
                 andrashorvath<span class="text-text-secondary">.dev</span>
             </a>
 
             {{-- Desktop Nav --}}
             <div class="hidden md:flex items-center gap-8">
-                @foreach ($navItems as $item)
-                    <a
-                        href="#{{ $item['id'] }}"
-                        class="text-[0.85rem] uppercase tracking-[0.5px] transition-all duration-300"
-                        :class="activeSection === '{{ $item['id'] }}'
-                            ? 'text-text-primary -translate-y-0.5'
-                            : 'text-text-secondary hover:text-accent'"
-                    >
-                        {{ $item['label'] }}
-                    </a>
-                @endforeach
+                @if ($isBlog)
+                    <a href="{{ route('home') }}" class="text-[0.85rem] uppercase tracking-[0.5px] text-text-secondary hover:text-accent transition-all duration-300">Home</a>
+                    <a href="{{ route('blog.index') }}" class="text-[0.85rem] uppercase tracking-[0.5px] text-text-primary -translate-y-0.5 transition-all duration-300">Blog</a>
+                @else
+                    @foreach ($navItems as $item)
+                        <a
+                            href="#{{ $item['id'] }}"
+                            class="text-[0.85rem] uppercase tracking-[0.5px] transition-all duration-300"
+                            :class="activeSection === '{{ $item['id'] }}'
+                                ? 'text-text-primary -translate-y-0.5'
+                                : 'text-text-secondary hover:text-accent'"
+                        >
+                            {{ $item['label'] }}
+                        </a>
+                    @endforeach
+                    <a href="{{ route('blog.index') }}" class="text-[0.85rem] uppercase tracking-[0.5px] text-text-secondary hover:text-accent transition-all duration-300">Blog</a>
+                @endif
             </div>
 
             {{-- Mobile Menu Button --}}
@@ -83,18 +89,24 @@
         class="md:hidden bg-bg-deep/95 backdrop-blur-xl border-b border-white/6"
     >
         <div class="px-4 py-4 space-y-3">
-            @foreach ($navItems as $item)
-                <a
-                    href="#{{ $item['id'] }}"
-                    x-on:click="open = false"
-                    class="block text-sm uppercase tracking-[0.5px] transition-all duration-300"
-                    :class="activeSection === '{{ $item['id'] }}'
-                        ? 'text-text-primary'
-                        : 'text-text-secondary hover:text-accent'"
-                >
-                    {{ $item['label'] }}
-                </a>
-            @endforeach
+            @if ($isBlog)
+                <a href="{{ route('home') }}" x-on:click="open = false" class="block text-sm uppercase tracking-[0.5px] text-text-secondary hover:text-accent transition-all duration-300">Home</a>
+                <a href="{{ route('blog.index') }}" x-on:click="open = false" class="block text-sm uppercase tracking-[0.5px] text-text-primary transition-all duration-300">Blog</a>
+            @else
+                @foreach ($navItems as $item)
+                    <a
+                        href="#{{ $item['id'] }}"
+                        x-on:click="open = false"
+                        class="block text-sm uppercase tracking-[0.5px] transition-all duration-300"
+                        :class="activeSection === '{{ $item['id'] }}'
+                            ? 'text-text-primary'
+                            : 'text-text-secondary hover:text-accent'"
+                    >
+                        {{ $item['label'] }}
+                    </a>
+                @endforeach
+                <a href="{{ route('blog.index') }}" x-on:click="open = false" class="block text-sm uppercase tracking-[0.5px] text-text-secondary hover:text-accent transition-all duration-300">Blog</a>
+            @endif
         </div>
     </div>
 </nav>

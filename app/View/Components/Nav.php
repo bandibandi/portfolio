@@ -19,6 +19,13 @@ class Nav extends Component
         ['id' => 'contact', 'label' => 'Contact'],
     ];
 
+    public bool $isBlog = false;
+
+    public function __construct()
+    {
+        $this->isBlog = request()->routeIs('blog.*');
+    }
+
     public function render(): View
     {
         return view('components.nav');

@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="{{ asset('images/og-image.jpg') }}">
 
     {{-- Canonical --}}
-    <link rel="canonical" href="{{ url('/') }}">
+    <link rel="canonical" href="{{ url()->current() }}">
 
     <title>{{ $title ?? 'andrashorvath.dev | Full-Stack Laravel Developer' }}</title>
 
