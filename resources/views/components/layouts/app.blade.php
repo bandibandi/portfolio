@@ -55,6 +55,9 @@
         'areaServed' => 'Worldwide',
     ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}</script>
 
+    {{-- Pirsch Analytics (cookieless, GDPR compliant) --}}
+    <script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="{{ config('pirsch.identification_code') }}"></script>
+
     {{-- Cloudflare Turnstile --}}
     @if (config('services.turnstile.site_key'))
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
