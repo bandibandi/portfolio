@@ -4,7 +4,7 @@ use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
@@ -19,7 +19,7 @@ Route::get('/', function () {
 ->withoutMiddleware([
     StartSession::class,
     ShareErrorsFromSession::class,
-    VerifyCsrfToken::class,
+    PreventRequestForgery::class,
     EncryptCookies::class,
     AddQueuedCookiesToResponse::class,
 ]);
